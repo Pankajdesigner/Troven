@@ -39,6 +39,7 @@ html.lenis {
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;1,400;1,500&display=swap');
 
 
+
  
 // loacl variables 
 :root {
@@ -73,28 +74,30 @@ body{
     background: radial-gradient(
 
     farthest-side at top left,
-    rgba(5, 96, 253, 0.1),
-    transparent
+    rgba(5, 96, 253, 0.155),
+    transparent 1500px
+    ),
+
+    radial-gradient(
+    farthest-corner at top right,
+    rgba(9, 253, 5, 0.053), 
+    transparent 500px
     ),
 
     radial-gradient(
     farthest-side at bottom right,
-    rgba(179, 156, 110, 0.012),
+    rgba(5, 96, 253, 0.063),
     transparent
     ),
 
     radial-gradient(
     farthest-side at bottom left,
-    rgba(5, 96, 253, 0.1),
-    transparent
-    ),
-
-    radial-gradient(
-    farthest-corner at top right,
-    rgba(5, 253, 30, 0.032), 
-    transparent 800px
+    rgba(222, 255, 6, 0.018),
+    transparent 1500px
     );
+    background-attachment: fixed;
 }
+
 p{
     font-family: var(--sub-font);
     font-weight: 400;
@@ -188,7 +191,7 @@ p{
 
 // navigation
 .troven-nav{
-    background: rgba(255, 255, 255, 0.63);
+    background: rgba(255, 255, 255, 0.83);
     backdrop-filter: blur(44px);
     padding: 20px 0;
     color: $black;
@@ -429,7 +432,7 @@ footer{
 .why-troven{
     padding-bottom: 100px;
     .troven-card{
-        border-radius: 27px;
+        border-radius: 47px;
         background: rgba(255, 255, 255, 0.545);
         display: flex;
         padding: 25px;
@@ -1839,7 +1842,31 @@ footer{
     position: fixed;
     overflow: hidden;
     z-index: 999999;
-    background: $smoke;
+    background: radial-gradient(
+
+    farthest-side at top left,
+    rgba(5, 96, 253, 0.155),
+    transparent 1500px
+    ),
+
+    radial-gradient(
+    farthest-corner at top right,
+    rgba(9, 253, 5, 0.053), 
+    transparent 500px
+    ),
+
+    radial-gradient(
+    farthest-side at bottom right,
+    rgba(5, 96, 253, 0.063),
+    transparent
+    ),
+
+    radial-gradient(
+    farthest-side at bottom left,
+    rgba(222, 255, 6, 0.018),
+    transparent 1500px
+    ),
+    #F8FAFE;
 
     img{
         position: absolute;
@@ -1865,3 +1892,6 @@ footer{
         transform: rotate(360deg) scale(1);
     } 
 }
+
+
+@import 'responsive.scss';
