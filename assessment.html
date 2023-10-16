@@ -1,0 +1,567 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Troven</title>
+  <link rel="shortcut icon" href="assets/img/icon.svg" type="image/x-icon"> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="assets/scss/main.css">
+</head> 
+
+<body id="smooth-wrapper">
+    
+    <!-- loader -->
+    <div class="trovenloader">
+        <img src="assets/img/icon.svg" alt="">
+    </div>
+
+    <main id="smooth-content">
+        <!-- navigation start-->
+        <header class="sticky-top"> 
+            <nav class="navbar navbar-expand-lg troven-nav">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo.svg" alt="logo troven">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li> 
+                    <li class="nav-item">
+                    <a class="nav-link active" href="assessment.html">Assessments</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="features.html">Features</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Help</a>
+                    </li>
+                </ul>
+                <div class="d-flex right-btn" role="search">
+                    <button class="btn btn-outline-primary" type="submit">Signup</button>
+                    <button class="btn btn-primary" type="submit">Login</button>
+                </div>
+                </div>
+            </div>
+            </nav> 
+        </header>
+        <!-- end navigation -->
+
+
+        <!-- page header -->
+        <section class="page-header-troven text-center">
+            <h1>Intuitive Assessment</h1>
+            <p>Efficient, Customizable, and Unlimited Assessments for Precision Talent Evaluation</p>
+        </section>
+
+
+        <!-- assessment feature -->
+        <section class="assess-feature-icon">
+            <div class="container">
+                <div class="row"> 
+
+                    <div class="col-md-4">
+                        <div class="assess-card">
+                            <div class="assess-img">
+                                <img src="assets/img/assess-icon-1.svg" alt="" class="wp-assess-card">
+                            </div>
+                            <div class="assess-content">
+                                <h4>Coding challenges</h4>
+                                <p>Create tailored coding challenges easily with our customizable platform. Design, share, and assess your unique coding tests, making the evaluation process seamless and efficient.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="assess-card">
+                            <div class="assess-img">
+                                <img src="assets/img/assess-icon-2.svg" alt="" class="wp-assess-card">
+                            </div>
+                            <div class="assess-content">
+                                <h4>Skill Based Assessment</h4>
+                                <p>Evaluate individual micro skills effectively. Tailor tests to specific abilities. Efficiently assess and enhance skills with targeted evaluations, ensuring a comprehensive understanding of each skill.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="assess-card">
+                            <div class="assess-img">
+                                <img src="assets/img/assess-icon-3.svg" alt="" class="wp-assess-card">
+                            </div>
+                            <div class="assess-content">
+                                <h4>Role Based Assessment</h4>
+                                <p>Develop a comprehensive assessment integrating diverse skills tailored to specific roles. Align multiple competencies, ensuring candidates' suitability and enhancing the selection process for optimal results.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </section>
+
+
+       <!-- Question Types -->
+       <section class="q-type">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 class="title-3"><span>Question</span> Types</h4>
+                </div>
+                <div class="col-md-12">
+                    <div class="q-wrapper">
+                        <div class="right-q">
+                            <ul>
+                                <li data-target="div1" class="active">
+                                    <img src="assets/img/side-q-icon 1.svg" alt="">
+                                    <span>Multiple Choice</span>
+                                </li>
+                                <li data-target="div2">
+                                    <img src="assets/img/side-q-icon 2.svg" alt="">
+                                    <span>Multiple Answers</span>
+                                </li>
+                                <li data-target="div3">
+                                    <img src="assets/img/side-q-icon 3.svg" alt="">
+                                    <span>Fill in the blanks</span>
+                                </li>
+                                <li data-target="div4">
+                                    <img src="assets/img/side-q-icon 4.svg" alt="">
+                                    <span>True or False</span>
+                                </li>
+                                <li data-target="div5">
+                                    <img src="assets/img/side-q-icon 5.svg" alt="">
+                                    <span>Coding Challenges</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="left-q">
+                            <div class="q-header">
+                                <span>Question 7 of 25</span>
+                            </div>
+                            <div class="main-q">
+
+                                <div id="div1" class="toggle-div">
+                                    <h5>Which is not a python framework ?</h5>
+                                    <div class="q-answers">
+                                        <div class="answer-select">
+                                        <input type="radio" name="one"> <label for="one">Django</label>
+                                        </div>
+                                        <div class="answer-select">
+                                            <input type="radio" name="one"> <label for="one">Django</label>
+                                        </div>
+                                        <div class="answer-select">
+                                            <input type="radio" name="one"> <label for="one">Django</label>
+                                        </div>
+                                        <div class="answer-select">
+                                            <input type="radio" name="one"> <label for="one">Django</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="div2" class="toggle-div">
+                                    <h5>Which is not a python framework ?</h5>
+                                    <div class="q-answers">
+                                        <div class="answer-select">
+                                        <input type="checkbox" name="one"> <label for="one">Django</label>
+                                        </div>
+                                        <div class="answer-select">
+                                            <input type="checkbox" name="one"> <label for="one">Django</label>
+                                        </div>
+                                        <div class="answer-select">
+                                            <input type="checkbox" name="one"> <label for="one">Django</label>
+                                        </div>
+                                        <div class="answer-select">
+                                            <input type="checkbox" name="one"> <label for="one">Django</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="div3" class="toggle-div">
+                                    <h5>Select the most appropriate homonym to fill in the blank.
+                                        This nation is _________ to each of its citizens. </h5>
+                                    <input type="text" class="form-control" placeholder="Enter Answer">
+                                </div>
+                                <div id="div4" class="toggle-div">
+                                    <h5>Which is not a python framework ?                                    </h5>
+                                    <div class="q-answers" style="justify-content: flex-start;">
+                                        <div class="answer-select">
+                                        <input type="radio" name="one"> <label for="one">true</label>
+                                        </div>
+                                        <div class="answer-select">
+                                            <input type="radio" name="one"> <label for="one">false</label>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div id="div5" class="toggle-div">
+                                    <div class="coding-challange">
+                                        <img src="assets/img/code.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="q-footer">
+                                 <div class="pagination">
+                                    <button>
+                                        <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path opacity="0.9" d="M5.35596 11.1537C5.14502 11.1537 4.95752 11.0834 4.81689 10.9427L0.316895 6.44275C0.012207 6.1615 0.012207 5.66931 0.316895 5.38806L4.81689 0.888062C5.09814 0.583374 5.59033 0.583374 5.87158 0.888062C6.17627 1.16931 6.17627 1.6615 5.87158 1.94275L1.91064 5.90369L5.87158 9.88806C6.17627 10.1693 6.17627 10.6615 5.87158 10.9427C5.73096 11.0834 5.54346 11.1537 5.35596 11.1537Z" fill="#212325"/>
+                                        </svg>
+                                    </button>
+                                
+                                    <button>1</button>
+                                    <button>2</button>
+                                    <button class="active">3</button>
+                                    <button>4</button>
+                                    <button>5</button>
+
+                                    <button>
+                                        <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path opacity="0.9" d="M1.35596 0.653687C1.56689 0.653687 1.75439 0.724 1.89502 0.864625L6.39502 5.36462C6.69971 5.64587 6.69971 6.13806 6.39502 6.41931L1.89502 10.9193C1.61377 11.224 1.12158 11.224 0.840332 10.9193C0.535644 10.6381 0.535644 10.1459 0.840332 9.86462L4.80127 5.90369L0.840331 1.91931C0.535644 1.63806 0.535644 1.14587 0.840331 0.864625C0.980956 0.724 1.16846 0.653687 1.35596 0.653687Z" fill="#212325"/>
+                                        </svg>                                            
+                                    </button>  
+                                 </div>
+                                 <div class="rght-btns">
+                                    <button class="btn btn-outline-danger btn-rounded">Skip</button>
+                                    <button class="btn btn-primary btn-rounded">
+                                        Next 
+                                        <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.7731 5.94017L8.05032 9.69261C7.91072 9.83333 7.72458 9.90369 7.53844 9.90369C7.32903 9.90369 7.14289 9.83333 7.00328 9.69261C6.7008 9.41118 6.7008 8.91867 7.00328 8.63724L9.44638 6.15124L0.744563 6.15124C0.325747 6.15124 0 5.8229 0 5.40075C0 5.00206 0.325747 4.65027 0.744563 4.65027L9.44638 4.65027L7.00328 2.18773C6.7008 1.90629 6.7008 1.41378 7.00328 1.13235C7.28249 0.827465 7.77111 0.827465 8.05032 1.13235L11.7731 4.88479C12.0756 5.16623 12.0756 5.65874 11.7731 5.94017Z" fill="#F8FAFE"/>
+                                        </svg>
+                                    </button> 
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </section>
+
+       <!-- skills -->
+       <section class="trove-skills">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="title-3"><span>Skill</span> Ocean</h3>
+                </div>
+                <div class="col-md-12">
+                    <div class="skill-wp-trove">
+                        <div class="skill-card">
+                            <h3>Web Development and Programming</h3>
+                            <div class="list-skills">
+                                <li>
+                                    <img class="img" src="assets/img/Skills/skill 20.png" alt="">
+                                    <span>GraphQL</span>
+                                  </li>
+                                  <li>
+                                    <img src="assets/img/Skills/skill 21.png" alt="">
+                                    <span>HubSpot</span>
+                                  </li>
+                                  <li>
+                                    <img src="assets/img/Skills/skill 22.png" alt="">
+                                    <span>iOS</span>
+                                  </li>
+                            
+                                  <li>
+                                    <img src="assets/img/Skills/skill 1.png" alt="">
+                                    <span>AWS</span>
+                                  </li> 
+                                  <li>
+                                    <img src="assets/img/Skills/skill 3.png" alt="">
+                                    <span>Ansible</span>
+                                  </li>
+                                  <li>
+                                    <img src="assets/img/Skills/skill 4.png" alt="">
+                                    <span>Azure</span>
+                                  </li>
+                                  <li>
+                                    <img src="assets/img/Skills/skill 5.png" alt="">
+                                    <span>Bash</span>
+                                  </li>
+                                  <li>
+                                    <img src="assets/img/Skills/skill 6.png" alt="">
+                                    <span>C</span>
+                                  </li>
+                                  <li>
+                                    <img src="assets/img/Skills/skill 7.png" alt="">
+                                    <span>C++</span>
+                                  </li>
+                                  <li>
+                                    <img src="assets/img/Skills/skill 8.png" alt="">
+                                    <span>C#/.NET</span>
+                                  </li>
+                                  <li>
+                                    <img src="assets/img/Skills/skill 9.png" alt="">
+                                    <span>Clojure</span>
+                                  </li>
+                            
+                                  <li>
+                                    <img src="assets/img/Skills/skill 23.png" alt="">
+                                    <span>Java</span>
+                                  </li>
+                                  <li>
+                                    <img src="assets/img/Skills/skill 34.png" alt="">
+                                    <span>PyTorch</span>
+                                  </li>
+                                  <li>
+                                    <img src="assets/img/Skills/skill 35.png" alt="">
+                                    <span>PHP</span>
+                                  </li>
+                                  <li>
+                                    <img src="assets/img/Skills/skill 36.png" alt="">
+                                    <span>R</span>
+                                  </li>
+                                  <li>
+                                    <img src="assets/img/Skills/skill 24.png" alt="">
+                                    <span>Javascript</span>
+                                  </li>
+                                  <li>
+                                    <img src="assets/img/Skills/skill 25.png" alt="">
+                                    <span>Jquery</span>
+                                  </li>
+                                  <li>
+                                    <img src="assets/img/Skills/skill 26.png" alt="">
+                                    <span>Jupyter</span>
+                                  </li>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <h3>Sales and Marketing</h3>
+                            <div class="list-skills">
+                                <li>
+                                    <img class="img" src="assets/img/Skills/skill 20.png" alt="">
+                                    <span>GraphQL</span>
+                                  </li>
+                                  <li>
+                                    <img src="assets/img/Skills/skill 21.png" alt="">
+                                    <span>HubSpot</span>
+                                  </li>
+                                  <li>
+                                    <img src="assets/img/Skills/skill 22.png" alt="">
+                                    <span>iOS</span>
+                                  </li>
+                            
+                                  <li>
+                                    <img src="assets/img/Skills/skill 1.png" alt="">
+                                    <span>AWS</span>
+                                  </li> 
+                                  <li>
+                                    <img src="assets/img/Skills/skill 3.png" alt="">
+                                    <span>Ansible</span>
+                                  </li>
+                                  <li>
+                                    <img src="assets/img/Skills/skill 4.png" alt="">
+                                    <span>Azure</span>
+                                  </li>
+                                  <li>
+                                    <img src="assets/img/Skills/skill 5.png" alt="">
+                                    <span>Bash</span>
+                                  </li>
+                                  <li>
+                                    <img src="assets/img/Skills/skill 6.png" alt="">
+                                    <span>C</span>
+                                  </li>
+                                  <li>
+                                    <img src="assets/img/Skills/skill 7.png" alt="">
+                                    <span>C++</span>
+                                  </li>
+                                  <li>
+                                    <img src="assets/img/Skills/skill 8.png" alt="">
+                                    <span>C#/.NET</span>
+                                  </li>
+                                  <li>
+                                    <img src="assets/img/Skills/skill 9.png" alt="">
+                                    <span>Clojure</span>
+                                  </li>
+                            
+                                  <li>
+                                    <img src="assets/img/Skills/skill 23.png" alt="">
+                                    <span>Java</span>
+                                  </li>
+                                  <li>
+                                    <img src="assets/img/Skills/skill 34.png" alt="">
+                                    <span>PyTorch</span>
+                                  </li>
+                                  <li>
+                                    <img src="assets/img/Skills/skill 35.png" alt="">
+                                    <span>PHP</span>
+                                  </li>
+                                  <li>
+                                    <img src="assets/img/Skills/skill 36.png" alt="">
+                                    <span>R</span>
+                                  </li>
+                                  <li>
+                                    <img src="assets/img/Skills/skill 24.png" alt="">
+                                    <span>Javascript</span>
+                                  </li>
+                                  <li>
+                                    <img src="assets/img/Skills/skill 25.png" alt="">
+                                    <span>Jquery</span>
+                                  </li>
+                                  <li>
+                                    <img src="assets/img/Skills/skill 26.png" alt="">
+                                    <span>Jupyter</span>
+                                  </li>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <h3>Others</h3>
+                            <div class="list-skills">
+                                <li>
+                                    <img class="img" src="assets/img/Skills/skill 20.png" alt="">
+                                    <span>GraphQL</span>
+                                  </li>
+                                  <li>
+                                    <img src="assets/img/Skills/skill 21.png" alt="">
+                                    <span>HubSpot</span>
+                                  </li>
+                                  <li>
+                                    <img src="assets/img/Skills/skill 22.png" alt="">
+                                    <span>iOS</span>
+                                  </li>
+                            
+                                  <li>
+                                    <img src="assets/img/Skills/skill 1.png" alt="">
+                                    <span>AWS</span>
+                                  </li> 
+                                  <li>
+                                    <img src="assets/img/Skills/skill 3.png" alt="">
+                                    <span>Ansible</span>
+                                  </li>
+                                  <li>
+                                    <img src="assets/img/Skills/skill 4.png" alt="">
+                                    <span>Azure</span>
+                                  </li>
+                                  <li>
+                                    <img src="assets/img/Skills/skill 5.png" alt="">
+                                    <span>Bash</span>
+                                  </li>
+                                  <li>
+                                    <img src="assets/img/Skills/skill 6.png" alt="">
+                                    <span>C</span>
+                                  </li>
+                                  <li>
+                                    <img src="assets/img/Skills/skill 7.png" alt="">
+                                    <span>C++</span>
+                                  </li>
+                                  <li>
+                                    <img src="assets/img/Skills/skill 8.png" alt="">
+                                    <span>C#/.NET</span>
+                                  </li>
+                                  <li>
+                                    <img src="assets/img/Skills/skill 9.png" alt="">
+                                    <span>Clojure</span>
+                                  </li>
+                            
+                                  <li>
+                                    <img src="assets/img/Skills/skill 23.png" alt="">
+                                    <span>Java</span>
+                                  </li>
+                                  <li>
+                                    <img src="assets/img/Skills/skill 34.png" alt="">
+                                    <span>PyTorch</span>
+                                  </li>
+                                  <li>
+                                    <img src="assets/img/Skills/skill 35.png" alt="">
+                                    <span>PHP</span>
+                                  </li>
+                                  <li>
+                                    <img src="assets/img/Skills/skill 36.png" alt="">
+                                    <span>R</span>
+                                  </li>
+                                  <li>
+                                    <img src="assets/img/Skills/skill 24.png" alt="">
+                                    <span>Javascript</span>
+                                  </li>
+                                  <li>
+                                    <img src="assets/img/Skills/skill 25.png" alt="">
+                                    <span>Jquery</span>
+                                  </li>
+                                  <li>
+                                    <img src="assets/img/Skills/skill 26.png" alt="">
+                                    <span>Jupyter</span>
+                                  </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </section>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="com-md-12">
+                        <div class="footer-wrapper">
+                        <div class="footer-top">
+                            <div class="footer-logo">
+                            <img src="assets/img/logo.svg" alt="">
+                            </div>
+                            <div class="footer-contact">
+                            <div>
+                                <p>Phone</p>
+                                <span>(123) 456-7890</span>
+                            </div>
+                            <div>
+                                <p>Email</p>
+                                <span>hello@trovenbusiness.com</span>
+                            </div>
+                            </div>
+                            <div class="social-handals">
+                            <p>Follow Us </p>
+                            <ul>
+                                <li>
+                                <a href="#"><img src="assets/img/Union.svg" alt=""></a>
+                                </li>
+                                <li>
+                                <a href="#"><img src="assets/img/fb.svg" alt=""></a>
+                                </li>
+                                <li>
+                                <a href="#"><img src="assets/img/linkedin.svg" alt=""></a>
+                                </li>
+                                <li>
+                                <a href="#"><img src="assets/img/wp.svg" alt=""></a>
+                                </li>
+                            </ul>
+                            </div>
+                        </div>
+                        <div class="footer-bottom">
+                            <div class="fb-left">
+                            <p>© 2023 Troven. All Rights Reserved</p>
+                            </div>
+                            <div class="link-footer">
+                            <a href="terms-of-use.html">Terms of Use</a>
+                            <a href="privacy-policy.html">Privacy Policy</a>
+                            <a href="cookie.html">Cookie Policy</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+    <!-- end main -->
+
+  <!-- scripts --> 
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script> 
+  <script src="assets/js/main.js"></script>  
+
+  <script>
+    
+  </script>
+
+</body>
+
+</html>
