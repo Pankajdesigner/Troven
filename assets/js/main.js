@@ -44,14 +44,11 @@ $(document).ready(function(){
   });
 });
 
-// Question Types
-$(document).ready(function(){
-  $(function() {                        
-    $(".see-more").click(function() {   
-      
-    });
+$(function() {                       //run when the DOM is ready
+  $(".see-more").click(function() {  //use a class, since your ID gets mangled
+    $('.plan-card').toggleClass("open");      //add the class to the clicked element
   });
-}); 
+});
 
 // why choose us
 $(document).ready(function(){
