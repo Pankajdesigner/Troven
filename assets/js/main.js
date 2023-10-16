@@ -44,11 +44,11 @@ $(document).ready(function(){
   });
 });
 
-$(function() {                       //run when the DOM is ready
-  $(".see-more").click(function() {  //use a class, since your ID gets mangled
-    $('.plan-card').toggleClass("open");      //add the class to the clicked element
-  });
-});
+// $(function() {                       
+//   $(".see-more").click(function() {   
+//     $('.plan-card').toggleClass("open");     
+//   });
+// });
 
 // why choose us
 $(document).ready(function(){
