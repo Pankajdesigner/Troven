@@ -1,1838 +1,846 @@
 
-// colors
-
-$primary: #0560FD;
-$Yellow: #FDA905;
-$black: #212325;
-$grey: #5E6E8C;
-$smoke: #DFE7F8;
-$white: #F8FAFE;
-$light:#fff;
-
-// animation 
-
-$transition-small:0.5s;
-
-html.lenis {
-    height: auto;
-  }
-  
-  .lenis.lenis-smooth {
-    scroll-behavior: auto;
-  }
-  
-  .lenis.lenis-smooth [data-lenis-prevent] {
-    overscroll-behavior: contain;
-  }
-  
-  .lenis.lenis-stopped {
-    overflow: hidden;
-  }
-  
-  .lenis.lenis-scrolling iframe {
-    pointer-events: none;
-  }
-
-
 // css import
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;1,400;1,500&display=swap');
+@import 'pages.scss';
+@import 'responsive.scss';
 
 
 
- 
-// loacl variables 
-:root {
-    --sub-font: 'Source Sans 3', sans-serif;
-    --main-font: 'Outfit', sans-serif;
-}
 
 
- 
+// responsive
 
-// container sizes
-@media (min-width: 1400px){
-    .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-        max-width: 1200px;
+@media (min-width:1440px){
+    body{
+        background: radial-gradient(farthest-side at top left, rgb(5 96 253 / 7%), transparent 1500px), radial-gradient(farthest-corner at top right, rgb(137 180 232 / 21%), transparent 500px), radial-gradient(farthest-side at bottom right, rgb(5 96 253 / 16%), transparent), radial-gradient(farthest-side at bottom left, rgb(224 232 254 / 14%), transparent 1500px);
     }
 }
-
-
-
-// style reset
-
-html{
-    background: $white; 
-}
-body{     
-    -webkit-font-smoothing: antialiased;
-    align-items: center;
-    font-family: var(--main-font);
-    font-weight: 400; 
-    font-size: 16px;
-    color: #212325;
-    background: radial-gradient(
-
-    farthest-side at top left,
-    rgba(5, 96, 253, 0.155),
-    transparent 1500px
-    ),
-
-    radial-gradient(
-    farthest-corner at top right,
-    rgba(9, 253, 5, 0.053), 
-    transparent 500px
-    ),
-
-    radial-gradient(
-    farthest-side at bottom right,
-    rgba(5, 96, 253, 0.063),
-    transparent
-    ),
-
-    radial-gradient(
-    farthest-side at bottom left,
-    rgba(222, 255, 6, 0.018),
-    transparent 1500px
-    );
-    background-attachment: fixed;
-}
-
-p{
-    font-family: var(--sub-font);
-    font-weight: 400;
-    font-size: 16px;
-}
-
-.btn{
-    border-radius: 4px;
-    padding: 10px 25px;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-}
-
-.form-control{
-    background: #fff;
-    border-radius: 4px;
-    padding: 12px 18px;
-    border-color: $smoke;
-}
-
-.btn-outline-danger:hover, .btn-check:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, .btn.show{
-    color: $white;
-} 
-
-.btn-rounded{
-    border-radius: 100px;
-}
-
-
-.btn.big{ 
-    padding: 15px 20px; 
-}
-
-.btn-light{
-    color: $primary;
-
-    &:hover{
-        background: $primary;
-        border: 1px solid $white;
-        color: $white;
+@media (max-width:1200px){ 
+    .Why-choose-us .card-choose.active .pointer-choose{
+        padding: 0px 25px;
     }
+    .Home-plan .col-md-3 {
+        width: 30%;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link{
+        padding: 15px 19px;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link.active::after{
+        left: 19px;
+    }
+    .hero-home h1, .hero-home .h1 {
+        font-size: 43px;
+    }
+    .v-1 h2, .v-1 .h2 {
+        font-size: 37.113px;
+    }
+    .why-troven .troven-card .content h3, .why-troven .troven-card .content .h3 {
+        font-size: 20px;
+    }
+    .Why-choose-us .card-choose{
+        height: 410px;
+    }
+    .why-troven .troven-card .content p{
+        font-size: 13px;
+    } 
+    .why-troven .troven-card .content ul li{
+        font-size: 13px;
+    }
+    .assess-feature .assess-card{
+        padding: 25px;
+    }
+    .side-tab{
+        .col-md-4{
+            width: 100%;
+        }
+        .col-md-8{
+            width: 100%;
+            margin-top: 30px;
+        }
+    }
+    .Why-choose-us .pointer-choose ul{
+        font-size: 13px;
+    }
+    .Why-choose-us .inner-content-choose h4, .Why-choose-us .inner-content-choose .h4 {
+        font-size: 23px;
+    }
+    .Home-plan .col-md-3 {
+        width: 33%;
+    }
+    .title-2 {
+        font-size: 35px;
+    }
+    .troven-journey .header-abput-tt p { 
+        font-size: 15px; 
+        line-height: 26px;
+        margin: 0;
+    }
+    .troven-journey .slider-swipe{
+        padding: 50px;
+    }
+    .troven-journey .slider-swipe .testimonials .client-msg h4, .troven-journey .slider-swipe .testimonials .client-msg .h4{
+        font-size: 24px;
+    }
+    .assess-feature .assess-card .assess-content ul{
+        font-size: 13px;
+    }
+    .assess-feature .assess-card .assess-content h4, .assess-feature .assess-card .assess-content .h4{
+        font-size: 16px; 
+    }
+    .Why-choose-us .inner-content-choose h3, .Why-choose-us .inner-content-choose .h3{
+        font-size: 28px;
+        top: 70%;
+    }
+    .title-3 {
+        font-size: 32px;
+    }
+    .page-header-troven h1, .page-header-troven .h1 {
+        font-size: 36px;
+    }
+    .page-header-troven p {
+        font-size: 18px;
+    }
+    .pricing-plan .price-plan-top .header-plan { 
+        min-width: 220px;
+        padding: 37px 30px;
+    }
+    .pricing-plan .price-feature .row-plan .feature-check{
+        min-width: 220px;
+    }
+    .pricing-plan .col-md-11{ 
+        width: 100%;
+    }
+    .contact-form{
+        .col-md-8 {
+            flex: 0 0 auto;
+            width: 82%;
+            margin: 0 auto;
+        }
+    }
+    .assess-feature-icon .assess-card .assess-content ul{
+        margin-top: 0;
+    }
+    .assess-feature-icon .assess-card .assess-content p{
+        min-height: 125px;
+    }
+    
 }
 
-.navbar-expand-lg .navbar-nav .nav-link {
-    padding: 15px 30px;
-    color: $black;
-    opacity: 0.8;
-
-    &.active{
-        opacity: 1;
-        position: relative;
+@media (max-width:992px){
+    .navbar-toggler{
+        border: none;
+        background: $primary; 
+        text-align: right;  
+        width: 46px;
+        padding: 12px 10px;
+        border-radius: 10px;
 
         &::after{
-            position: absolute;
-            left: 30px;
-            bottom: 5px;
-            content: '';
-            background: $primary;
-            width: 24px;
-            height: 2px;
-        }
-    }
-
-}
-
-.p-l-5{
-    padding-left: 50px;
-}
-
-.title-1{
-    font-size: 51px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 115%;
-
-}
-.title-2{
-    font-size: 42px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 115%; /* 48.3px */
-}
-.title-3{
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 115%;
-}
-
-
-// navigation
-.troven-nav{
-    background: rgba(255, 255, 255, 0.83);
-    backdrop-filter: blur(44px);
-    padding: 20px 0;
-    color: $black;
-    transition: 0.5s;
-
-    .right-btn{
-        .btn{
-            margin-left: 20px;
-            transition: 0.5s;
-        }
-    }
-}
-
-.navbar-brand {
-    width: 146px;
-    img{
-        width: 146px;
-        transition-property: width;
-        transition-duration: 0.5s;
-    }
-} 
-
-.scrolling{
-    .troven-nav{
-        padding: 4px 0;
-        transition: 0.5s;
-    }
-    .navbar-brand img{
-        width: 116px;
-        transition-property: width;
-        transition-duration: 0.5s;
-    }
-    .btn{
-        padding: 6px 25px;
-        transition: 0.5s;
-    }
-
-}
-
-
-h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1{
-    span{
-        color: $primary;
-    }
-}
-
-
-.modal-backdrop{
-    opacity: 0.9 !important;
-    background: #1C2E56;
-}
-
-.modal-content{
-    border-radius: 5px;
-}
-
-.modal-body{
-    padding: 18px;
-    border-radius: 5px;
-    background: $white;
-}
-
-// footer
-
-footer{
-    padding-bottom: 100px;
-    overflow: hidden;
-
-    .footer-wrapper{
-        background: $white;
-        padding: 80px;
-    }
-    .footer-top{
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        align-items: center;
-        padding-bottom: 30px;
-        border-bottom: 1px solid $smoke;
-        margin-bottom: 30px;
-
-        p{
-            color: $black; 
-            font-family: var(--main-font);
-            font-size: 16px; 
-            font-weight: 400; 
-            margin-bottom: 0px; 
-        }
-
-        .footer-contact{
-            display: flex;
-
-            div:first-child{
-                margin-right: 100px;
-            }
-
-            
-            span{
-                color: $black;
-                opacity: 0.6; 
-                font-size: 15px; 
-                font-weight: 400; 
-            }
-        }
-
-        ul{
-            padding: 0;
-            margin: 0;
-        }
-        li{
-            list-style: none;
-            margin-right: 15px;
-            display: inline-block;
-            margin-top: 5px;
-        }
-    }
-
-    .footer-bottom{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        p{
-            color: black; 
-            font-size: 14px; 
-            font-weight: 400; 
-            margin-bottom: 0;
-            font-family: var(--main-font);
-        }
-
-        a{
-            color: black; 
-            font-size: 14px; 
-            font-weight: 400; 
-            margin-bottom: 0;
-            text-decoration: none;
-            margin-left: 30px;
-
-            &:hover{
-                color: $primary;
-                transition: 0.5s;
-            }
-        }
-    }
-}
-
-
-
-
-
-
-
-// Home//
-// ============//
-// ============//
-
-// hero
-.hero-home{
-    padding-top: 100px;
-    
-    h1{font-size: 51px; font-style: normal; font-weight: 500; line-height: 115%;margin-bottom: 15px;}
-    p{margin-bottom: 30px; font-family: var(--sub-font);color: $grey; font-size: 16px; font-style: normal; font-weight: 400; line-height: 26.5px}
-    .btn{margin-right: 23px;}
-
-}
-
-// demo
-.demo{
-    position: relative;  
-        .tablet-main{ 
-            border-radius: 52.438px;
-            background: linear-gradient(108deg, #EEE 1.07%, #C7C8CA 100%);
-            box-shadow: 43px 43px 100px 0px rgba(0, 0, 0, 0.38);
-            width: 1500px;
-            height: 1000px; 
-            position: relative; 
-            transform: translateX(-50%) scale(0.6); 
-            left: 50%; 
-            margin: 0 auto;
-            margin-top: -60px;
-        }
-        .ifram-wrapper{
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            left: 0;
-            border-radius: 53.438px;
-            top: 0;
-            overflow: auto;
-            background: $black;
-            border: 4px solid #d0d5de;
-            padding: 40px;
-            overflow: hidden;
-        }
-        iframe{
-            border-radius: 20px;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-        }
-        span{
-            position: absolute;
-            left: -108px;
-            top: 252px;
-            display: inline-block;
-            background: #FDA905;
-            color: #F8FAFE;
-            z-index: 10;
-            padding: 10px 20px;
-            font-size: 26px;
-            transform: rotate(270deg);
-        }
-}
-
-
-// sortlist candidate section
-.v-1{
-    padding-top: 0px;
-    padding-bottom: 100px;
-    
-    p{
-        margin-bottom: 20px !important;
-
-    }
-    hr{
-        margin: 2rem 0;
-    }
-    h2{
-        font-size: 44.113px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 115%;
-    }
-
-}
-
-// why troven section
-.why-troven{
-    padding-bottom: 100px;
-    .troven-card{
-        border-radius: 47px;
-        background: rgba(255, 255, 255, 0.545);
-        display: flex;
-        padding: 25px;
-        align-items: center;
-        margin-bottom: 40px;
-
-        img{
-            max-width: 470px;
-            box-shadow: 0 0 15px #3a373708;
-        }
-        .content{
-            padding: 0 50px;
-            h3{  
-                font-size: 26px; 
-                font-weight: 500; 
-            }
-            p{ 
-                font-size: 14px; 
-                font-weight: 300;
-                line-height: 133%;
-                color: $grey;
-                font-family: var(--main-font);
-                margin-bottom: 20px;
-                margin-top: 15px;
-            }
-            ul{
-                margin: 0;
-                padding: 0;
-                list-style: none; 
-                display: flex;
-                margin-top: 20px;
-                margin-bottom: 35px;
-                justify-content: space-between;
-                li{
-                    display: inline-block; 
-                    font-size: 15px;
-
-                    img{
-                        margin-right: 10px;
-                    }
-                }
-            }
-        }
-        
-    }
-
-}
-
-// tab section
-.side-tab{
-    padding: 150px 0;
-    background: $primary;
-    color: $white;
-
-    .tabmenu{
-        padding: 0 20PX;
-    }
-
-    .tab-content {
-
-        .tab1{
-            display: none;
-        }
-        .tab2{
-            display: none;
-        }
-        .tab3{
-            display: none;
-        }
-        .tab1.active{
-            display: block;
-        }
-        .tab2.active{
-            display: block;
-        }
-        .tab3.active{
-            display: block;
-        }
-    }
-
-    .tabs{
-        background: rgb(255 255 255 / 12%);
-        border-radius: 40px;
-        display: flex;
-        padding: 7px;
-        align-items: center;
-        justify-content: space-between;
-        overflow: hidden;
-        margin-bottom: 30px;
-        max-width: 400px;
-
-        div{
-            padding: 6px 20px; 
-            border-radius: 40px;
-            color: $white;
-            cursor: pointer;
-
-            &.active{
-                background: $light;
-                color: $primary;
-                transition: 0.5s;
-            }
-        }
-    }
-    h3{
-        font-size: 32px;
-        font-weight: 400;
-    }
-    p{
-        font-size: 16px;
-        font-weight: 300;
-    }
-
-    hr{
-        margin: 25px 0;
-    }
-
-    .img-wp-side-tab{
-        padding-left: 50px;
-        border-radius: 32px;
-        padding: 20px;
-        border: 1.5px solid rgba(255, 255, 255, 0.08); 
-        background:  rgba(255, 255, 255, 0.08);
-        
-        img{ 
-            border-radius: 15px; 
-            box-shadow: 0px 4px 41px 0px rgba(0, 0, 0, 0.10);
-        }
-    } 
-    ul{ 
-       padding-left: 15px;
-    
-        li{
-            font-family: var(--sub-font);
-            font-size: 16px;
-            font-style: italic;
-            font-weight: 400;
-            line-height: 208%; 
-        }
-    }
-}
-
-// partner
-.partner{
-    padding: 130px 0;
-
-    .logo-wp-list{
-        margin-top: 50px;
-    }
-    ul{
-        display: flex;
-        align-items: center;
-        justify-content: stretch;
-        border-bottom: 1px solid $smoke; 
-        margin: 0;
-        padding: 0;
-
-        &:last-child{
-            border: none;
-        }
-
-    }
-    li{
-        list-style: none;
-        width: 25%;
-        text-align: center;
-        min-height: 150px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-right: 1px solid $smoke;
-
-        &:last-child{
-            border: none;
-        }
-
-        &:hover img{
-            filter: grayscale(0%);
-            transition: $transition-small;
-        }
-
-        img{
-            max-width: 50%;
-            transition: $transition-small;
-            filter: grayscale(100%);
-        }
-    }
-}
-
-// why choose us
-.Why-choose-us{
-    padding: 60px 0;
-    padding-top: 0px;
-
-    .title-2{
-        margin-bottom: 50px;
-    }
-
-    .card-choose{
-        background-size: cover;
-        background-position: center;
-        height: 460px;
-        transition: 0.5s;
-        border-radius: 10px;
-        cursor: pointer;
-    }
-
-    .inner-content-choose{
-        height: 100%;
-        background-size: cover;
-        width: 100%;
-        color: $white;
-        background-position: center;
-        position: relative;
-        border-radius: 10px;
-        overflow: hidden;
-
-        .border-btm{
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            height: 10px;
-            border-radius: 0px 0px 10px 10px;
-            background: $smoke;
-            opacity: 0.3;
+            clear: both;
             content: '';
         }
 
-        .bg-overlay{
-            background: rgba(36, 58, 97, 0.883);
-            height: 100%;
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-        }
-
-        h4{  
-            font-size: 32px; 
-            font-weight: 400;
-        }
-        h3{  
-            font-size: 32px; 
-            font-weight: 400;
-            text-align: left;
-            color: #fff;
-            position: absolute;
-            top: 60%;
-            transform: rotate(-90deg);
-            width: 100%;
-            z-index: 2;
-            
-        }
-    }
-
-    .card-choose.active{ 
-        
-        width: 33.33333333%;
-
-        .border-btm{
-            opacity: 0;
-        }
-        .pointer-choose{
-            display: block;
-            position: absolute;
-            left: 0;
-            bottom: 75px;
-            min-width: 375px; 
-            padding: 0 50px;
-        }
-
-        .bg-overlay{
-            border-radius: 10px;
-            background: rgba(5, 96, 253, 0.863);
-            transition: 0.5s;
-        }
-
-        h3{
-            display: none;
-            position: absolute;
-            font-size: 32px; 
-            font-weight: 400;
-            line-height: 115%;
-            text-align: center;
-            bottom: 151px;
-            left: -5px;
-            margin: 0;
-            transform: rotate(270deg);
+        &:focus{
+            box-shadow: none;
         } 
 
-    }
-
-    .pointer-choose{
-        display: none;
-
-        ul{
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 200%;
-            padding-left: 20px;
-            position: relative;
-
-
-            &::after{
-                width: 2px;
-                height: calc(100% - 20px);
-                position: absolute;
-                left: 0;
-                content: '';
-                top: 12px;
-                background: $Yellow;
-            }
-        }
-    }
-
-
-    .one .inner-content-choose{
-        background-image: url(../img/why-choose-us/WHY1.png); 
-    }
-    .two .inner-content-choose{
-        background-image: url(../img/why-choose-us/WHY2.png); 
-    }
-    .three .inner-content-choose{
-        background-image: url(../img/why-choose-us/WHY3.png); 
-    }
-    .four .inner-content-choose{
-        background-image: url(../img/why-choose-us/WHY4.png); 
-    }
-    .five .inner-content-choose{
-        background-image: url(../img/why-choose-us/WHY5.png); 
-    }
- 
-}
-
-
-// home price plan
-.Home-plan{
-    padding: 100px 0;
-
-    .title-2{
-        padding-bottom: 50px;
-    }
-
-
-    .col-md-3{
-        width: 27%;
-    }
-
-    hr{
-        border-color: $grey;
-    }
-
-    // .more-feature{
-    //     max-height: 0;
-    //     overflow: hidden;
-    //     transition: max-height 0.5s ease-in-out;
-    // }
-
-    // .open .more-feature{ 
-    //     overflow: auto; 
-    //     max-height: 400px; 
-    //     transition: max-height 0.5s ease-in-out;
-    //     animation: hide-scroll 0.5s linear;
-    // }
-
-    // @keyframes hide-scroll {
-    //     from, to { overflow: hidden; } 
-    // }
-
-
-    // .btn div{
+        .line-menu-one{width:20px; height: 1px; background: $white; margin: 0 auto; border-radius: 6px;}
+        .line-menu-two{transition: 0.5s; width: 26px; height: 1px; background: $white; margin: 6px auto; border-radius: 6px;}
+        .line-menu-three{width: 20px; height: 1px; background: $white; border-radius: 6px; margin: auto;}
         
-    //     &:first-child{
-    //         display: block;
-    //     }
-    //     &:last-child{
-    //         display: none;
-    //     }
-
-    // }
-
-    // .open .btn div{
-        
-    //     &:first-child{
-    //         display: none;
-    //     }
-    //     &:last-child{
-    //         display: block;
-    //     }
-
-    // }
- 
-
-    .popular{
-        position: absolute;
-        left: -38px;
-        top: 30px;
-        display: inline-block;
-        padding: 10px;
-        background-color: $Yellow;
-        padding: 2px 45px;
-        font-weight: 400;
-        text-transform: uppercase;
-        font-size: 13px;
-        transform: rotate(-50deg);
-
-    }
-
-    .plan-card{
-        overflow: hidden;
-        position: relative;
-        background: $white;
-        border-radius: 3px; 
-        padding: 60px 30px 40px 30px;
-        transition: 0.2s;
-
-        &:hover{
-            transition: 0.3s;
-            transform: scale(1.05);
-            box-shadow: 0px 10px 28px rgb(62 93 124 / 27%);
-            z-index: 1;
-            border-radius: 10px;
-
-        }
-
-        &.active{
-            background: $primary;
-            color: $white;
-
-            li{
-                color: $white !important;
-                background-image: url(../img/icons/check-white.svg) !important;
-            }
-
-            .top-price{
-                h4,span,p,b{
-                    color: $white !important;
-                }
-            }
-
-            hr{
-                border-color: white;
-            }
-
-        }
-
-        .btn{
-           display: block;
-           width: 100%;
-        }
-
-       
-        .top-price{
-            text-align: center;
-            margin-bottom: 30px;
-
-            h4{
-                font-size: 18px; 
-                font-weight: 400; 
-                color: $grey;
-                text-transform: uppercase;
-                margin-bottom: 0;
-            }
-
-            b{ 
-                text-align: center; 
-                font-size: 32px; 
-                font-weight: 600; 
-            }
-
-            p{ 
-                font-size: 14px;
-                font-style: normal; 
-                color: $grey;
-            }
-        }
-
-        .plan-features{
-
-            margin-bottom: 30px;
-
-            li{
-                font-size: 14px;
-                color: $grey;
-                font-weight: 300;
-                padding: 8px 0px;
-                list-style: none;
-                padding-left: 25px;
-                background: url(../../assets/img/icons/check.svg) no-repeat center left;
-            }
-            
-        }
-        
-    }
-    .more-detail-pan{
-        margin-top: 40px;
-    }
-}
-
-// about troven
-.troven-journey{
-    padding: 100px 0;
-
-    .header-abput-tt{
-        p{
-            font-family: var(--sub-font);
-            color: #788296;
-            font-size: 18px; 
-            font-weight: 400;
-            line-height: 28px;
-        }
-    }
-    
-
-    hr{
-        margin: 50px 0;
-    }
-
-    .troven-number{ 
-        h4{
-            font-size: 76px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 122%;
-        }
-        p{
-            color: $primary;
-            font-family: Outfit;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 115%;
-        }
-        .number-last{
-            text-align: right;
-        }
-        .number-first{
-            text-align: left;
-        }
-    }
-    
-    .slider-swipe{
-        background: $primary;
-        padding: 90px;
-        margin-top: 60px;
-        border-radius: 16px;
-
-        .testimonials{
-            display: flex;
-            align-items: center;
-            margin: 1px;
-            background: $primary;
-
-            .client-msg{
-                color: white;
-                padding-right: 70px;
-    
-                h4{
-                    font-family: Outfit;
-                    font-size: 24px;
-                    font-style: normal;
-                    font-weight: 300;
-                    line-height: 138%;
-                    margin-bottom: 25px;
-                    position: relative;
-
-                    &::after{
-                        position: absolute;
-                        left: 0;
-                        top: -65px;
-                        content: url(../img/quote.svg);
-                        color: #fff; 
-                    }
-                }
-                p{
-                    padding-left: 9cap;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 300;
-                    position: relative;
-                    line-height: 115%;
-                    padding-left: 90px;
-
-                    &::after{
-                        position: absolute;
-                        left: 0;
-                        top: 8px;
-                        width: 74px;
-                        height: 1px;
-                        background: $white;
-                        content: '';
-                    }
-                }
-            }
-            .client-pic{
-                img{
-                    max-width: 380px;
-                }
-            }
-        }
-
-        .swiper-button-prev{
-            bottom: 0;
-            left: 10px;
-            top: auto;
-
-            &::after{
-                content: url(../img/slider-nav.svg);
-            }
-        }
-        .swiper-button-next{
-            bottom: 0;
-            left: 70px;
-            top: auto;
-
-            &::after{
-                content: url(../img/slider-btn-next.svg); 
-            }
-        }
-        
-    }
-}
-
-// skills
-.skills-toven{
-    padding: 50px 0; 
-    position: relative;
-    
-    .skill-top-section{
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        border-radius: 35px;
-        background: $white;
-        width: 500px;
-        padding: 10px;
-        box-shadow: 0px 4px 42px rgba(0, 0, 0, 0.15); 
-        
-        .inner-box{
-            border-radius: 27px;
-            padding: 60px;
-            text-align: center;
-            border: 1px solid $smoke;
-
-            h4{
-                font-size: 46px; 
-                font-weight: 700;
-                line-height: 115%;
-
-                small{
-                    font-size: 33px; 
-                    font-weight: 300;
-                }
-                span{
-                    display: block;
-                    color: $primary; 
-                    font-size: 21.79px; 
-                    font-weight: 400;
-                    line-height: 126.5%;
-                }
-            }
-
-            p{
-                color: $grey;
-                text-align: center; 
-                font-size: 15px; 
-                font-weight: 300; 
-                margin: 0; 
-            }
-        }
-    }
-    .list-row{
-        display: flex;
-        overflow: hidden;
-    }
-    
-    .list-row.one{
-         li{
-            transform: translateX(-50px);
-         }
-    }
-
-    li{
-        display: inline-flex;
-        align-items: center;
-        padding: 9px 20px;
-        align-items: center;
-        gap: 12px;
-        border-radius: 111px;
-        border: 1px solid $light;
-        background: $white;
-        list-style: none;
-        font-size: 16px;  
-        font-weight: 400;
-        margin: 10px;
-        img{
-            width: 30px;
-        }
-    }
-}
-
-//  about troven
-.about-us{
-    padding: 100px;
-
-    p{
-        font-size: 16px; 
-        font-family: var(--main-font);
-        font-weight: 300;
-        line-height: 169.5%; 
-        margin: 0;
-        color: $grey;
-
-    }
-
-    hr{
-        margin: 40px 0;
-    }
-
-    .col-md-8 p{
-        padding-right: 50px;
-    }
-    
-}
-
-
-
-// Features//
-// ============//
-// ============//
-
-
-.page-header-troven{
-    background-color: $primary;
-    background-image: url(../img/page-header-bg.png);
-    background-size: cover;
-    background-position: center;
-    padding: 100px 50px;
-    color: $white;
-
-    h1{
-        font-size: 51px; 
-        font-weight: 500;
-    }
-    p{
-        font-size: 20px; 
-        font-weight: 300;
-        font-family: var(--sub-font);
-    }
-
-    
-}
-
-.assess-feature{
-    padding: 100px 0;
-
-    .assess-card{
-        background: $white;
-        border-radius: 12px;
-        padding: 35px;
-
-        .assess-img{
-            text-align: center;
-        }
-
-        img{
-            max-width: 80%;
-        }
-
-        .assess-content{
-            padding-top:40px;
-
-            h4{
-                font-size: 20px;
-                font-style: normal;
-                font-weight: 500;
-                color: $black;
-            }
-
-            ul{
-                padding-left: 15px;
-                margin: 0;
-                font-size: 14px; 
-                font-weight: 400;
-                line-height: 25PX;
-                color: $grey;
-            }
-        }
-    }
-}
-
-.asess-tt .title-3{
-    margin-bottom: 40px;
-}
-
-.faqs{
-    padding: 100px 0;
-    padding-top: 50px;
-
-    .title-3{
-        margin-bottom: 30px;
-    }
-
-    .accordion{
-        --bs-accordion-border-color:#DFE7F8;
-    }
-    .accordion-button:not(.collapsed)::after{
-        background-image: url(../img/open-ac.svg); 
-    }
-    .accordion-button::after{
-        background-image: url(../img/close-ac.svg);
-        width: 25px;
-        height: 25px;
-        background-size: cover;
-    }
-    .accordion-button{
-        padding: 30px;
-        color: $black;
-        font-size: 18px; 
-        font-weight: 400;
-        border-bottom-color:#dfe7f8;
-    }
-    .accordion-body{
-        font-size: 16px; 
-        color: $grey;
-        font-weight: 400;
-        line-height: 30px; 
-        padding: 30px;
-    }
-    .accordion-button:not(.collapsed){
-        background-color:$white;
-        outline-color:#dfe7f8;
-    }
-    .accordion-button:focus{
-        outline: none;
-        box-shadow: none;
-        border-bottom: 1px solid #dfe7f8;
-        outline-color:#dfe7f8;
-    }
-}
-
-
-// Assessment//
-// ============//
-// ============//
-
-.assess-feature-icon{
-    padding: 100px 0;
-    .assess-card{
-        background: $white;
-        border-radius: 12px;
-        padding: 40px 25px;
-
-        .assess-img{
-        border: 1px solid $smoke;    
-        display: inline-block;
-        border-radius: 40px;
-        }
-    
-
-        .assess-content{
-            padding-top: 20px;
-            h4{
-                font-size: 20px;
-                font-style: normal;
-                font-weight: 500;
-                color: $black;
-            }
-
-            p{ 
-                font-family: var(--sub-font);
-                margin: 0;
-                font-size: 14px; 
-                font-weight: 400;
-                line-height: 21px;
-                color: $grey;
-            }
-        }
-    }
-}
-
-.q-type{
-    padding-bottom: 100px;
-
-    .toggle-div {
-        display: none;
-    }
-
-    .title-3{
-        margin-bottom: 30px;
-    }
-    .q-wrapper{
-        display: flex;
-    }
-    .right-q{
-        background: $white;
-        padding: 50px 0;
-        min-width: 250px;
-        margin-right: 10px;
-
-        ul{
-            padding: 0;
-            margin: 0;
-            list-style: none;
-        }
-        li{
-            padding: 10px 30px;
-            display: flex;
-            align-items: center;
-            gap: 16px;
-            margin: 15px 0;
+        &:focus .line-menu-two, &:hover .line-menu-two{
+            width: 15px;
             transition: 0.5s;
-            cursor: pointer;
-
-          
-
-            &.active{
-                background: $primary;
-                color: $white;
-                transition: 0.5s;
-
-                img{
-                   filter: brightness(0) invert(1); 
-                }
-            }
         }
     }
-    .left-q{
-        background: $white;
-        width: 100%;
+    .demo{
+        height: 780px;
+        margin-top: -105px;
 
-        .coding-challange {
-            margin: -41px -21px;
-            img{
-                max-width: 100%;
-            }
+        span{
+            display: none;
         }
-        .q-header{
-            padding: 30px 40px;
-            border-bottom: 1px solid $smoke;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            color: $grey;
-        }
-        .main-q{
-            padding: 60px 40px;
-
-            h5{
-                font-size: 26px;
-                font-style: normal;
-                font-weight: 500;
-                color: $black;
-                margin-bottom: 20px;
-            }
-
-            .q-answers{
-                display: flex;
-                align-items: center;
-                gap: 20px;
-                justify-content: space-between;
-
-                .answer-select{
-                    display: flex; 
-                    width: 25%;
-                    padding: 15px 20px;
-                    align-items: center;
-                    gap: 11px;
-                    border-radius: 54px;
-                    border: 1px solid $smoke;
-                    background: $light;                    
-                }
-                input[type=radio] {
-                    width: 20px;
-                    height: 20px;
-                }
-                input[type=checkbox] {
-                    width: 20px;
-                    height: 20px;
-                }
-            }
-        }
-
-        .q-footer{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 30px 0;
-            margin: 0 40px;
-            border-top: 1px solid $smoke;
-            
-            .pagination{
-                button{
-                    background: none;
-                    border: none;
-                    border-radius: 30px;
-                    width: 30px;
-                    height: 30px;
-                    margin: 0 5px;
-                    text-align: center;
-
-                    &.active{
-                        background: $primary;
-                        color: $white;
-                    }
-                }
-            }
-            .rght-btns{
-                display: flex;
-                gap: 10px;
-                color: red;
-
-                svg{
-                    margin-left: 10px;
-                    position: relative;
-                    top: -1px;
-                }
-            }
-        }
-    }   
-    
-
-
-}
-
-.trove-skills{
-    padding-bottom: 100px;
-
-    .title-3{
+    }
+    .troven-nav{
+        padding: 10px 0;
+    }
+    .navbar-collapse{
+        background: $smoke;
+        padding: 10px;
+        padding-bottom: 30px;
+        border-radius: 11px;
+        padding-top: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .demo .tablet-main{
+        transform: translateX(-50%) scale(0.5);
+    }
+    .navbar-brand img {
+        width: 110px;
+        top: 0px;
+        position: relative;
+    }
+    .scrolling .navbar-brand img{
+        top: 1px;
+        width: 110px;
+    }
+    body{
+        background: radial-gradient(farthest-side at top left, rgba(5, 96, 253, 0.155), transparent 800px), radial-gradient(farthest-corner at top right, rgba(9, 253, 5, 0.053), transparent), radial-gradient(farthest-side at bottom right, rgba(5, 96, 253, 0.063), transparent 100), radial-gradient(farthest-side at bottom left, rgba(222, 255, 6, 0.018), transparent 900px);
+    }
+    .hero-home h1, .hero-home .h1 {
+        font-size: 30px;
+    }
+    .v-1 h2, .v-1 .h2 {
+        font-size: 26px;
+    }
+    .v-1 hr {
+        margin: 1rem 0;
+    }
+    .why-troven .troven-card{
+        border-radius: 20px;
+        padding: 20px;
+    }
+    .hero-home p{
+        line-height: 130%;
+        font-size: 17px;
+    }
+    .hero-home.v-1 p{
+        line-height: 130%;
+        font-size: 14px;
+        margin-bottom: 15px !important;
+    }
+    .assess-feature-icon .assess-card .assess-content p{
+        min-height: auto;
+        margin-bottom: 15px;
+    }
+    .about-us p{
+        font-size: 14px;
+    }
+    .Why-choose-us .card-choose.active .pointer-choose{
+        top: 135px;
+    }
+    .why-troven .troven-card .content ul{
+        display: none;
+    }
+    .why-troven .troven-card img {
+        max-width: 270px;
+    } 
+    .why-troven .troven-card .content {
+        padding: 0 0 0 20px;
+    }
+    .btn{
+        padding: 6px 18px;
+        font-size: 13px;
+    }
+    .side-tab .tabs{
+        max-width: 310px;
+    }
+    .v-1, .why-troven{
+        padding-bottom: 20px;
+        padding-top: 30px;
+    }
+    .side-tab, .partner{
+        padding: 60px 0;
+    }
+    .partner li{
+        min-height: 80px
+    }
+    .title-2 {
+        font-size: 30px;
+    }
+    .partner .logo-wp-list {
+        margin-top: 20px;
+    }
+    .Why-choose-us .title-2 {
+        margin-bottom: 30px;
+    }
+    .why-troven .troven-card{
         margin-bottom: 20px;
     }
-    .skill-wp-trove{
-        padding: 55px;
-        background: $white;
-        border-radius: 12px;
+    .Why-choose-us .card-choose{
+        height: 310px;
+    }
+    .Why-choose-us .card-choose.active.col-md-2 {
+        width: 46%;
+    }
+    .feature-page.Why-choose-us .card-choose.active.col-md-2 {
+            width: 50%;
+    }
 
-        .skill-card{
-            padding-bottom: 40px;
-            border-bottom: 1px solid $smoke;
-            margin-bottom: 40px;
+    .Why-choose-us .card-choose.col-md-2 {
+        width: 12%;
+    }
+    .Why-choose-us .inner-content-choose h3, .Why-choose-us .inner-content-choose .h3 {
+        font-size: 22px;
+        top: 70%;
+    }
+    .Home-plan .plan-card .plan-features li{
+        font-size: 12px; 
+        padding: 7px 0px;
+        background: none;
+    }
+    .Home-plan .plan-card{
+        padding: 60px 20px 40px 20px;
+    }
+    .Home-plan .plan-card.active li{
+        background: none !important;
+    }
+    .faqs .accordion-button{
+        padding: 20px; 
+        font-size: 14px;
+    }
+    .faqs .accordion-body {
+        font-size: 14px;  
+        line-height: 24px;
+        padding: 20px;
+    }
+    .troven-journey .troven-number h4, .troven-journey .troven-number .h4{
+        font-size: 35px;
+    }
+    .troven-journey .troven-number p{
+        font-size: 14px;
+    }
+    .troven-journey .slider-swipe{
+        padding: 30px;
+        margin-top: 35px;
+    }
+    .troven-journey .slider-swipe .testimonials .client-pic img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .client-pic{
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+        overflow: hidden;
+        position: relative;
+        top: -75px;
+    }
+    .troven-journey .slider-swipe .testimonials .client-msg { 
+        min-width: 100%;
+        padding-right: 0;
+    }
+    .troven-journey .slider-swipe .testimonials{
+        flex-wrap: wrap;
+    }
+    .troven-journey .slider-swipe .testimonials .client-msg h4, .troven-journey .slider-swipe .testimonials .client-msg .h4{
+         margin-bottom: 35px;
+    }
+    .troven-journey .slider-swipe .testimonials .client-msg p{
+        margin-bottom: 40px;
+        padding-left: 70px;
 
-            &:last-child{
-                margin-bottom: 0;
-                border-bottom: none;
-                padding-bottom: 0;
-            }
-
-            h3{
-                color: $black; 
-                margin-bottom: 18px;
-                font-size: 22px; 
-                font-weight: 500; 
-            }
-
-            li {
-                display: inline-flex;
-                align-items: center;
-                padding: 9px 20px;
-                align-items: center;
-                gap: 12px;
-                border-radius: 111px;
-                border: 1px solid #DFE7F8;
-                background: #F8FAFE;
-                list-style: none;
-                font-size: 16px;
-                font-weight: 400;
-                margin: 10px;
-
-                img{
-                    width: 30px;
-                }
-            }
+        &::after{
+            display: none;
         }
     }
-}
-
-
-// contact//
-// ============//
-// ============//
-
-.page-header-troven.contact-us-page{
-    padding-bottom: 200px;
-}
-
-.contact-form{
-    padding-bottom: 50px;
-
-    .card-form{
-        border-radius: 8px;
-        border: 1px solid #DFE7F8;
-        background:  #F8FAFE;
-        padding: 50px 15px;
-        margin-top: -170px;
-
-        hr{
-            margin: 30px 0;
-            border-color: $grey;
-            opacity: 0.2;
-        }
-
-        .btn svg{
-            margin-left: 10px;
-            position: relative;
-            top: -2px;
-        }
-
-        
+    footer .footer-wrapper{
+        padding: 30px;
     }
-}
-
-
-// contact//
-// ============//
-// ============//
-.pricing-plan{
-    padding: 100px 0;
-
+    footer .footer-top .footer-contact div:first-child{
+        margin-right: 20px;
+    }
+    footer .footer-top{
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+    .footer-logo img{
+        width: 110px;
+    }
+    footer .footer-top p, footer .footer-top .footer-contact span, footer .footer-bottom p, footer .footer-bottom a{
+        font-size: 14px;
+    }
+    .troven-journey .slider-swipe .testimonials .client-msg h4::after, .troven-journey .slider-swipe .testimonials .client-msg .h4::after{
+        transform: scale(0.6);
+        left: -28px;
+        top: -28px;
+    }
+    footer {
+        padding-bottom: 60px;
+    }
+    .about-us{
+        padding: 60px 0; 
+        padding-top: 0;
+    }
+    .troven-journey{
+        padding:0;
+    }
+    .troven-journey hr {
+        margin: 30px 0;
+    }
+    .skills-toven li{
+        padding: 6px 16px;
+        gap: 10px;
+        font-size: 14px;
+    }
+    .skills-toven li img {
+        width: 20px;
+    }
+    .skills-toven .skill-top-section .inner-box h4, .skills-toven .skill-top-section .inner-box .h4 {
+        font-size: 35px;
+    }
+    .skills-toven .skill-top-section{
+        width: 320px;
+    }
+    .Why-choose-us{
+        padding: 0;
+    }
+    .Home-plan {
+        padding: 60px 0;
+    }
+    .skills-toven .skill-top-section .inner-box{
+        padding: 30px;
+    }
+    .skills-toven .skill-top-section .inner-box p{
+        font-size: 13px;
+    }
+    .assess-feature-icon{
+        .col-md-4{
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+    .assess-feature-icon{
+        padding: 60px 0;
+    }
+    .page-header-troven{
+        padding: 60px 20px;
+    }
+    .q-wrapper{
+        flex-wrap: wrap;
+    }
+    .q-type .right-q{
+        padding: 0;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .q-type .left-q{
+        width: 100%;   
+    }
+    .q-type .right-q li{
+        margin-top: 10px;
+    }
+    .q-type .right-q li {
+        padding: 12px 30px;
+    }
+    .trove-skills .skill-wp-trove{
+        padding: 30px;
+    }
+    .trove-skills .skill-wp-trove .skill-card li{
+        padding: 5px 11px;
+        gap: 10px;
+        margin: 5px;
+        font-size: 12px;
+    }
+    .trove-skills .skill-wp-trove .skill-card li img {
+        width: 15px;
+    }
+    .trove-skills .skill-wp-trove .skill-card h3, .trove-skills .skill-wp-trove .skill-card .h3{
+        margin-bottom: 9px;
+        font-size: 18px;
+    }
+    .skill-card {
+        padding-bottom: 20px; 
+        margin-bottom: 20px;
+    }
+    .q-type .left-q .main-q {
+        padding: 40px 40px;
+    }
+    .q-type .left-q .main-q .q-answers .answer-select{
+        padding: 9px 10px;
+        font-size: 13px;
+    }
+    .q-type .left-q .main-q h5, .q-type .left-q .main-q .h5{
+        font-size: 24px;
+        margin-bottom: 13px;
+    }
+    .q-type {
+        padding-bottom: 60px;
+    }
+    .trove-skills {
+        padding-bottom:60px;
+    }
+    .assess-feature .col-md-4{
+        width: 50%;
+    }
     .pricing-card{
-        border-radius: 32px;
-        background: $white;
+        overflow: auto;
+        padding-top: 20px;
     }
+    .price-plan-top, .price-feature, .price-custom{
+        width: 100%;
+    }
+    .pricing-plan .price-feature .row-plan{
+        padding: 10px 0;
+    }
+    .pricing-plan .price-feature .row-plan .name-feature,.feature-check{
+        font-size: 13px;
+    }
+    .pricing-plan .price-feature .row-plan .feature-check img {
+        width: 14px;
+    }
+    .pricing-plan .price-plan-top .header-plan {
+        min-width: 170px;
+        padding: 40px 20px;
+    }
+    .pricing-plan .price-feature .row-plan .feature-check {
+        min-width: 170px;
+    }
+    .pricing-plan .price-plan-top .popular-center{
+        top: -6px;
+    }
+    .pricing-plan .price-feature .row-plan .name-feature{
+        padding-left: 10px;
+    }
+    .pricing-plan .price-plan-top .header-plan h2, .pricing-plan .price-plan-top .header-plan .h2{
+        font-size: 24px; 
+    }
+    .pricing-plan .price-plan-top .header-plan span{
+        font-size: 15px;
+    }
+    .header-plan .btn {
+        padding: 4px 16px;
+    }
+    .pricing-plan .price-custom .custom-plan-inner h4, .pricing-plan .price-custom .custom-plan-inner .h4 {
+        font-size: 20px;
+    }
+    .pricing-plan .price-custom .custom-plan-inner p {
+        font-size: 13px;
+    }
+    .form-control{
+        font-size: 14px;
+    }
+    .about-us .troven-about-content .col-md-8, .about-us .troven-about-content .col-md-4{
+        width: 100%;
+    }
+    .about-us .troven-about-content .col-md-8 p{
+        padding: 0;
+    }
+    .assess-feature .assess-card img {
+        max-width: 100%;
+    }
+}
 
-    .price-plan-top{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 20px; 
 
-        .header-plan{
-            text-align: center;
-            min-width: 250px;
-            padding: 50px;
-            span{
-                color: $grey;
-                font-size: 18px; 
-                font-weight: 500;
-            }
-            h2{
-                font-size: 32px; 
-                font-weight: 700;
-                color: $black;
-            }
-            p{
-                font-size: 14px; 
-                font-weight: 400;
-                color: $grey;
-            }
-            .btn{
-                padding: 7px 25px;
-            }
-            
+
+
+
+
+// mobile
+
+@media (max-width:770px){ 
+    .hero-home{
+        padding: 0;
+        .container{
+            display: flex;
+            height: calc(100vh - 67px);
+            align-items: center;
         }
-
-        .popular-center{
-            background: $primary;
-            color: $white;
-            border-radius: 17px;
-            position: relative;
-            top: -12px;
-            padding-top:70px;
-
-            span, h2, p{
-                color: $white;
-            }
-            .btn{
-                color: $primary;
-
-                &:hover{
-                    background: $primary;
-                    border: 1px solid $white;
-                    color: $white;
-                }
-            }
+        img{
+            margin-top: 50px;
         }
-        .offset-plan{
+    }
+    .right-btn{
+        margin-top: 10px;
+    }
+    .demo{
+        display: none;
+    }
+    .btn.big {
+        padding: 10px 16px;
+    }
+    .hero-home.v-1 .container{
+        display: block;
+        height: auto;
+    }
+    .hero-home.v-1 img {
+        margin-top: 30px;
+    }
+    .hero-home.v-1 .p-l-5{
+        padding-left: 0 !important;
+    }
+    .why-troven .troven-card{
+        flex-wrap: wrap;
+    }
+    .why-troven .troven-card img{
+        max-width: 100%;
+    }
+    .why-troven .troven-card .content {
+        padding: 0;
+        padding-top: 25px;
+    }
+    .why-troven .troven-card .content p{
+        margin-bottom: 15px;
+        margin-top: 0;
+    }
+    .side-tab .tabs {
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+    .side-tab .img-wp-side-tab{
+        border-radius: 12px;
+        padding: 10px; 
+    }
+    .side-tab .img-wp-side-tab img {
+        border-radius: 9px;
+    }
+    .side-tab p, .side-tab ul li{
+        font-size: 14px;
+    }
+    .side-tab .col-md-8{
+        margin-top: 10px;
+    }
+    .side-tab hr {
+        margin: 15px 0;
+    }
+    .side-tab .col-md-8{
+        padding-left: 15px;
+    }
+    .logo-row{
+        flex-wrap: wrap;
+    }
+    .partner li{
+        width: 50%;
+        border: none;
+    }
+    .partner .col-md-10{
+        margin: 0;
+        width: 100%;
+    }
+    .Why-choose-us .card-choose.col-md-2 {
+        width: 100%;
+    }
+    .Why-choose-us .card-choose.active.col-md-2 {
+        width: 100%;
+    } 
+    .Why-choose-us .card-choose{
+        margin-bottom: 15px;
+    }
+    .Why-choose-us .card-choose {
+        height: 260px;
+    }
+    .Why-choose-us .card-choose.active .pointer-choose {
+        top: 60px;
+    }
+    .Home-plan .col-md-3 {
+        width: 100%;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .Home-plan .plan-card .btn{
+        display: inline-block;
+        width: auto;
+    }
+    .header-abput-tt{
+        .offset-1.col-md-5{
+            margin: 0;
             width: 100%;
         }
     }
-    .price-feature{
-        padding: 20px;
-        padding-top: 10px;
-
-        .addons{
-            padding: 30px 0;
-            padding-bottom: 15px;
-            h4{
-                font-size: 20px;
-                font-style: normal;
-                font-weight: 600;
-                color: $black;
-                margin: 0;
-                 
-                span{
-                    font-size: 13px;
-                    font-style: normal;
-                    font-family: var(--sub-font);
-                    font-weight: 400;
-                    color: $black;
-                    background: $smoke;
-                    line-height: 19px;
-                    border-radius: 70px;      
-                    padding: 4px 15px;
-                    display: inline-block;     
-                    margin-left: 10px;       
-                    position: relative;
-                    top: -3px;
-                }
-            }
-        }
-        .row-plan{
-            display: flex;
-            align-items: center;
-            justify-content: space-between; 
-            padding: 15px 0;
-            background:rgb(120 130 150 / 9%);
-            border-radius: 6px;
-
-            &:nth-child(even){
-                background: none;
-            }
-
-
-            .feature-check{
-                min-width: 250px;
-                text-align: center; 
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                img{
-                    width: 18px;
-                }
-            }
-
-            .name-feature{
-                width: 100%;
-                padding-left: 20px;
-                font-size: 14px; 
-                color: $black;
-                font-weight: 400;
-            }
-        }
+    .troven-number .col-md-3{
+        text-align: center !important;
+        margin-bottom: 20px;
     }
-    .price-custom{
-        padding: 20px;
-        .custom-plan-inner{
-            background: $primary;
-            background-image: url(../img/page-header-bg.png);
-            background-size: 1600px;
-            background-position: center;
-            color: $white;
-            padding:60px 30px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            border-radius: 20px;
-
-            .left-custom{
-                width: 550px;
-            }
-            .right-custom{
-                text-align: center;
-                width: 300px;
-            }
-            .btn.big{
-                padding: 15px 40px;
-            }
-
-            p{
-                font-size: 15px;
-                font-style: normal;
-                font-weight: 400;
+    .troven-journey .slider-swipe .testimonials .client-msg h4, .troven-journey .slider-swipe .testimonials .client-msg .h4{
+        font-size: 20px;
+    }
+    .about-us img{
+        margin-bottom: 20px;
+    }
+    .troven-journey .troven-number h4, .troven-journey .troven-number .h4 {
+        font-size: 49px;
+    }
+    footer .footer-top{
+        flex-wrap: wrap;
+    }
+    .footer-contact{
+        width: 100%;
+        justify-content: space-between;
+        margin: 20px 0;
+    }
+    footer .footer-top {
+        margin-bottom: 15px;
+        padding-bottom: 35px;
+        padding-top: 10px;
+    }
+    .footer-bottom{
+        flex-wrap: wrap;
+    }
+    .link-footer{
+        padding-top: 10px;
+        border-top: 1px solid $smoke;
+        margin-top: 14px;
+    }
+    footer .footer-bottom a{
+        margin-left: 0;
+        margin-right: 10px;
+    }
+    .v-1{
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+    }
+    .why-troven{
+        padding-bottom: 50px;
+    }
+    .Home-plan .title-2 {
+        padding-bottom: 20px;
+    }
+    .side-tab h3, .side-tab .h3 {
+        font-size: 26px;
+    }
+    .title-2 {
+        font-size: 24px;
+    }
+    .partner .logo-wp-list {
+        margin-top: 0px;
+    }
+    .Why-choose-us .title-2 {
+        margin-bottom: 20px;
+    }
+    .card-wp-troven{
+        &:last-child{
+            .troven-card{
                 margin-bottom: 0;
             }
-
-            h4{
-                font-size: 23px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 122%;                
-            }
-
         }
     }
-
-}
-
-.selected-plan{
-    border-radius: 4px;
-    background-color: rgba(5, 96, 253, 0.096);
-    padding: 30px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: -18px;
-    margin-bottom: 10px;
-    h4{
-        font-family: Outfit;
-        font-size: 26px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 122%;
-        color: $primary;
-        margin: 0;
+    .Home-plan .plan-card .plan-features li{
+        font-size: 14px;
     }
-    p{
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 115%;
-        margin: 0;
-        color: $grey;
+    .q-answers{
+        flex-wrap: wrap;
+        gap: 10px;
     }
-}
-
-.addons{
-    padding: 20px 0;
-    border-bottom: 1px dashed $smoke;
-
-    strong{
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 122%;
-        color:$black;
-        display: inline-block;
+    .q-type .left-q .main-q .q-answers .answer-select{
+        width: 48%;
+        gap: 6px;
+    }
+    .q-footer .pagination{
+        display: none;
+    }
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .q-type .left-q .main-q .q-answers input[type=radio], .q-type .left-q .main-q .q-answers input[type=checkbox]{
+        width: 15px;
+        height: 15px;
+    }
+    .q-type .left-q .main-q .q-answers{
+        gap: 10px;
+    }
+    .q-type .left-q .q-footer{
+        justify-content: end;
+        margin: 0 20px;
+    }
+    .q-type .left-q .main-q {
+        padding: 20px 0px;
+        margin: 0 20px;
+    }
+    .q-type .right-q {
+        padding: 0;
+        margin: 0; 
         margin-bottom: 10px;
     }
-    ul{
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        
-        li{
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            color: $black;
-            display: flex;
-            padding: 5px 0;
-            justify-content: space-between;
-            align-items: center;
-
-            .addons-right{
-                font-weight: 500;
-                display: flex;
-                align-items: center;
-                span{
-                    display: inline-block;
-                    margin-right: 13px;
-                }
-                input[type=checkbox] {
-                    width: 18px;
-                    height: 18px;
-                }
-            }
-        }
+    .page-header-troven h1, .page-header-troven .h1 {
+        font-size: 31px;
     }
-}
- 
-.addons.other-price ul li .addons-right span {
-    display: inline-block;
-    margin-right: 0;
-}
-
-.checkout-footer{
-    display: flex;
-    align-items: center;
-    justify-content: space-between; 
-    padding: 20px 0;
-    padding-top: 35px;
-
-    h4{
-        font-size: 27px;
-        font-style: normal;
-        font-weight: 600;
+    .assess-feature-icon {
+        padding: 50px 0;
+    }
+    .trove-skills {
+        padding-bottom: 50px;
+    }
+    .q-type .title-3 {
+        margin-bottom: 20px;
+    }
+    .title-3 {
+        font-size: 26px;
+    }
+    .q-type .right-q li{
+        font-size: 14px;
         margin: 0;
     }
-    p{
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 122%;
-        margin-bottom: 1px;
+    .q-type .left-q .main-q h5, .q-type .left-q .main-q .h5 {
+        font-size: 18px;
+        margin-bottom: 13px;
     }
-
-    .btn.big {
-        padding: 15px 30px;
+    .q-type .left-q .q-header{
+        padding: 20px 20px;
+    }
+    .q-type .left-q .main-q .q-answers input[type=radio] {
+        width: 15px;
+        height: 15px;
+    }
+    .assess-feature .col-md-4 {
+        width: 100%;
+    }
+    .assess-feature .assess-card{
+        padding: 20px;
+    }
+    .assess-feature .assess-card img {
+        max-width: 90px;
+    }
+    .assess-feature .assess-card .assess-content {
+       padding: 0;
+    }
+    .assess-feature{
+        padding: 50px 0;
+    }
+    .assess-feature .assess-card{
+        padding: 15px;
+        display: flex;
+        gap: 18px;
+        align-items: center;
+    }
+    .assess-feature .col-md-4 {
+        margin-bottom: 15px;
+    }
+    .assess-feature .assess-card .assess-content ul{
+        line-height: 18px;
+    }
+    .feature-page.Why-choose-us .card-choose.active.col-md-2{
+        width: 100%;
+    }
+    .faqs{
+        padding-top: 50px;
+        padding-bottom: 120px;
+    }
+    .pricing-plan{
+        padding: 50px 0;
+    }
+    .price-plan-top, .price-feature, .price-custom{
+        width: 100%;
+    }
+    .pricing-card {
+        padding-top: 20px;
+        width: 100%;
+        zoom: 0.5;
+    }
+    .checkout-footer h4, .checkout-footer .h4{
+        font-size: 22px;
+    }
+    .contact-form .col-md-8{
+        width: 100%;
+    }
+    .form-control {
+        font-size: 12px;
+    }
+    .contact-form {
+        padding-bottom: 0;
+    }
+    .faqs .accordion-button::after{
+        width: 20px;
+        height: 20px;
     }
     
 }
 
-
-
+ 
 // loader//
 // ============//
 // ============//
@@ -1893,5 +901,3 @@ footer{
     } 
 }
 
-
-@import 'responsive.scss';

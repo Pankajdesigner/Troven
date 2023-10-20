@@ -52,13 +52,18 @@ $(document).ready(function(){
 
 // why choose us
 $(document).ready(function(){
+  // Check window width on load
+  if ($(window).width() > 768) {
     $(function() {                        
       $(".card-choose").hover(function() {   
         $('.card-choose').removeClass("active");     
         $(this).addClass("active");     
       });
     });
-}); 
+  }else{
+    $('.card-choose').addClass("active");
+  }
+});
 
 // side tab
 $(document).ready(function(){
@@ -310,13 +315,11 @@ logo.forEach((section) => {
       duration: 2, 
     },
     scrollTrigger: {
-        scrub: 1, 
+      scrub: 1, 
       trigger: '.logo-wp-list',
-      fastScrollEnd: true,
-      // markers: true,
+      fastScrollEnd: true, 
       start: "top bottom",
-      end: "top 80%", // fastScrollEnd triggers as we leave the section so make sure you have an end position set low down enough to see the impact.
-      toggleActions: "play none none reverse",
+      end: "top 80%",  
     }
   });
   sd.from(q('img'), {
