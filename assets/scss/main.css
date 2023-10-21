@@ -14253,16 +14253,16 @@ footer .footer-bottom a:hover {
     overflow: hidden;
   }
   .assess-feature .assess-card img {
-    max-width: 120px;
+    max-width: 103px;
   }
   .assess-feature .assess-card .assess-content {
     padding: 0;
   }
   .assess-feature .assess-card .assess-img {
     position: absolute;
-    right: -20px;
-    top: 1px;
-    opacity: 0.1;
+    right: 10px;
+    top: 9px;
+    opacity: 1;
   }
   .assess-feature {
     padding: 50px 0;
@@ -14334,7 +14334,7 @@ footer .footer-bottom a:hover {
     font-size: 14px;
   }
   .pricing-plan {
-    height: 655px;
+    height: 705px;
     -webkit-transform: scale(0.5);
     -webkit-transform-origin: top left;
   }
