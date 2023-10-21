@@ -11,15 +11,15 @@
 
 // responsive
 
-@media (min-width:1440px){
-    body{
-        background: radial-gradient(farthest-side at top left, rgb(5 96 253 / 7%), transparent 1500px), radial-gradient(farthest-corner at top right, rgb(137 180 232 / 21%), transparent 500px), radial-gradient(farthest-side at bottom right, rgb(5 96 253 / 16%), transparent), radial-gradient(farthest-side at bottom left, rgb(224 232 254 / 14%), transparent 1500px);
-    }
+@media (min-width:1440px){ 
     .pricing-plan .col-md-11{
         width: 80%;
     }
 }
 @media (max-width:1200px){ 
+    .demo .tablet-main{ 
+        transform: translateX(-50%) scale(0.6); 
+    }
     .Why-choose-us .card-choose.active .pointer-choose{
         padding: 0px 25px;
     }
@@ -130,7 +130,7 @@
     
 }
 
-@media (max-width:992px){
+@media (max-width:991px){
     .navbar-toggler{
         border: none;
         background: $primary; 
@@ -188,10 +188,7 @@
     .scrolling .navbar-brand img{
         top: 1px;
         width: 110px;
-    }
-    body{
-        background: radial-gradient(farthest-side at top left, rgba(5, 96, 253, 0.155), transparent 800px), radial-gradient(farthest-corner at top right, rgba(9, 253, 5, 0.053), transparent), radial-gradient(farthest-side at bottom right, rgba(5, 96, 253, 0.063), transparent 100), radial-gradient(farthest-side at bottom left, rgba(222, 255, 6, 0.018), transparent 900px);
-    }
+    } 
     .hero-home h1, .hero-home .h1 {
         font-size: 30px;
     }
@@ -536,6 +533,28 @@
 // mobile
 
 @media (max-width:768px){ 
+    body{
+        background: #F0F5FE;
+    }
+
+    .navbar-toggler{
+        height: 39px;
+    }
+    .navbar-toggler.active{
+        height: 39px;
+        .line-menu-one{
+            transform: rotate(45deg);
+            position: relative;
+            top: 1px;
+        }
+        .line-menu-two{
+           width: 0;
+           margin: 0;
+        }
+        .line-menu-three{
+            transform: rotate(-45deg);
+        }
+    }
     .hero-home{
         padding: 50px 0;
         .container{
@@ -547,8 +566,14 @@
             margin-top: 50px;
         }
     }
+    .hero-home .btn {
+        margin-right: 15px;
+    }
     .right-btn{
         margin-top: 10px;
+    }
+    .troven-nav .right-btn .btn:last-child{
+        margin-left: 10px;
     }
     .demo{
         display: none;
@@ -927,6 +952,8 @@
         margin-top: -30px;
         animation: loader 0.8s cubic-bezier(0.43, 0.2, 1, 1) infinite; 
     }
+
+    
    
 }
 @keyframes loader {
@@ -943,3 +970,12 @@
     } 
 }
 
+@media (max-width: 767px) {
+    .trovenloader{
+        background: #F0F5FE;
+
+        img{
+            width: 50px;
+        }
+    }
+}

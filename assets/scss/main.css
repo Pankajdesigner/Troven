@@ -12013,7 +12013,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   color: #212325;
-  background: radial-gradient(farthest-side at top left, rgba(5, 96, 253, 0.155), transparent 1500px), radial-gradient(farthest-corner at top right, rgba(9, 253, 5, 0.053), transparent 500px), radial-gradient(farthest-side at bottom right, rgba(5, 96, 253, 0.063), transparent), radial-gradient(farthest-side at bottom left, rgba(222, 255, 6, 0.018), transparent 1500px);
+  background: radial-gradient(farthest-side at top left, rgba(5, 96, 253, 0.07), transparent 1500px), radial-gradient(farthest-corner at top right, rgba(137, 180, 232, 0.21), transparent 500px), radial-gradient(farthest-side at bottom right, rgba(5, 96, 253, 0.16), transparent), radial-gradient(farthest-side at bottom left, rgba(224, 232, 254, 0.14), transparent 1500px);
   background-attachment: fixed;
 }
 
@@ -12264,7 +12264,7 @@ footer .footer-bottom a:hover {
   width: 1500px;
   height: 1000px;
   position: relative;
-  transform: translateX(-50%) scale(0.6);
+  transform: translateX(-50%) scale(0.7);
   left: 50%;
   margin: 0 auto;
   margin-top: -60px;
@@ -13487,14 +13487,14 @@ footer .footer-bottom a:hover {
 }
 
 @media (min-width: 1440px) {
-  body {
-    background: radial-gradient(farthest-side at top left, rgba(5, 96, 253, 0.07), transparent 1500px), radial-gradient(farthest-corner at top right, rgba(137, 180, 232, 0.21), transparent 500px), radial-gradient(farthest-side at bottom right, rgba(5, 96, 253, 0.16), transparent), radial-gradient(farthest-side at bottom left, rgba(224, 232, 254, 0.14), transparent 1500px);
-  }
   .pricing-plan .col-md-11 {
     width: 80%;
   }
 }
 @media (max-width: 1200px) {
+  .demo .tablet-main {
+    transform: translateX(-50%) scale(0.6);
+  }
   .Why-choose-us .card-choose.active .pointer-choose {
     padding: 0px 25px;
   }
@@ -13599,7 +13599,7 @@ footer .footer-bottom a:hover {
     min-height: 125px;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .navbar-toggler {
     border: none;
     background: #0560FD;
@@ -13671,9 +13671,6 @@ footer .footer-bottom a:hover {
   .scrolling .navbar-brand img {
     top: 1px;
     width: 110px;
-  }
-  body {
-    background: radial-gradient(farthest-side at top left, rgba(5, 96, 253, 0.155), transparent 800px), radial-gradient(farthest-corner at top right, rgba(9, 253, 5, 0.053), transparent), radial-gradient(farthest-side at bottom right, rgba(5, 96, 253, 0.063), transparent 100), radial-gradient(farthest-side at bottom left, rgba(222, 255, 6, 0.018), transparent 900px);
   }
   .hero-home h1, .hero-home .h1 {
     font-size: 30px;
@@ -14007,6 +14004,27 @@ footer .footer-bottom a:hover {
   }
 }
 @media (max-width: 768px) {
+  body {
+    background: #F0F5FE;
+  }
+  .navbar-toggler {
+    height: 39px;
+  }
+  .navbar-toggler.active {
+    height: 39px;
+  }
+  .navbar-toggler.active .line-menu-one {
+    transform: rotate(45deg);
+    position: relative;
+    top: 1px;
+  }
+  .navbar-toggler.active .line-menu-two {
+    width: 0;
+    margin: 0;
+  }
+  .navbar-toggler.active .line-menu-three {
+    transform: rotate(-45deg);
+  }
   .hero-home {
     padding: 50px 0;
   }
@@ -14018,8 +14036,14 @@ footer .footer-bottom a:hover {
   .hero-home img {
     margin-top: 50px;
   }
+  .hero-home .btn {
+    margin-right: 15px;
+  }
   .right-btn {
     margin-top: 10px;
+  }
+  .troven-nav .right-btn .btn:last-child {
+    margin-left: 10px;
   }
   .demo {
     display: none;
@@ -14372,5 +14396,13 @@ footer .footer-bottom a:hover {
   }
   100% {
     transform: rotate(360deg) scale(1);
+  }
+}
+@media (max-width: 767px) {
+  .trovenloader {
+    background: #F0F5FE;
+  }
+  .trovenloader img {
+    width: 50px;
   }
 }/*# sourceMappingURL=main.css.map */
