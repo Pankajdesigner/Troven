@@ -14007,6 +14007,9 @@ footer .footer-bottom a:hover {
   body {
     background: #F0F5FE;
   }
+  .pricing-plan .price-feature .row-plan .name-feature, .feature-check {
+    font-size: 16px;
+  }
   .navbar-toggler {
     height: 39px;
   }
