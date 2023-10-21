@@ -333,6 +333,8 @@ footer{
 // hero
 .hero-home{
     padding-top: 100px;
+    position: relative;
+    z-index: 1;
     
     h1{font-size: 47px; font-style: normal; font-weight: 500; line-height: 115%;margin-bottom: 15px;}
     p{margin-bottom: 30px; font-family: var(--sub-font);color: $grey; font-size: 24px; font-style: normal; font-weight: 400; line-height: 115%}
@@ -1374,9 +1376,9 @@ footer{
         width: 100%;
 
         .coding-challange {
-            margin: -41px -21px;
+            margin: -20px 0px;
             img{
-                max-width: 100%;
+                width: 100%;
             }
         }
         .q-header{
@@ -1571,6 +1573,8 @@ footer{
         align-items: center;
         justify-content: space-between;
         padding: 0 20px; 
+
+        
 
         .header-plan{
             text-align: center;

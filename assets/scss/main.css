@@ -12231,6 +12231,8 @@ footer .footer-bottom a:hover {
 
 .hero-home {
   padding-top: 100px;
+  position: relative;
+  z-index: 1;
 }
 .hero-home h1, .hero-home .h1 {
   font-size: 47px;
@@ -13081,10 +13083,10 @@ footer .footer-bottom a:hover {
   width: 100%;
 }
 .q-type .left-q .coding-challange {
-  margin: -41px -21px;
+  margin: -20px 0px;
 }
 .q-type .left-q .coding-challange img {
-  max-width: 100%;
+  width: 100%;
 }
 .q-type .left-q .q-header {
   padding: 30px 40px;
@@ -13487,6 +13489,9 @@ footer .footer-bottom a:hover {
 @media (min-width: 1440px) {
   body {
     background: radial-gradient(farthest-side at top left, rgba(5, 96, 253, 0.07), transparent 1500px), radial-gradient(farthest-corner at top right, rgba(137, 180, 232, 0.21), transparent 500px), radial-gradient(farthest-side at bottom right, rgba(5, 96, 253, 0.16), transparent), radial-gradient(farthest-side at bottom left, rgba(224, 232, 254, 0.14), transparent 1500px);
+  }
+  .pricing-plan .col-md-11 {
+    width: 80%;
   }
 }
 @media (max-width: 1200px) {
@@ -14001,13 +14006,13 @@ footer .footer-bottom a:hover {
     max-width: 100%;
   }
 }
-@media (max-width: 770px) {
+@media (max-width: 768px) {
   .hero-home {
-    padding: 0;
+    padding: 50px 0;
   }
   .hero-home .container {
     display: flex;
-    height: calc(100vh - 67px);
+    min-height: calc(100vh - 167px);
     align-items: center;
   }
   .hero-home img {
@@ -14244,12 +14249,20 @@ footer .footer-bottom a:hover {
   }
   .assess-feature .assess-card {
     padding: 20px;
+    position: relative;
+    overflow: hidden;
   }
   .assess-feature .assess-card img {
-    max-width: 90px;
+    max-width: 120px;
   }
   .assess-feature .assess-card .assess-content {
     padding: 0;
+  }
+  .assess-feature .assess-card .assess-img {
+    position: absolute;
+    right: -20px;
+    top: 1px;
+    opacity: 0.1;
   }
   .assess-feature {
     padding: 50px 0;
@@ -14264,14 +14277,33 @@ footer .footer-bottom a:hover {
     margin-bottom: 15px;
   }
   .assess-feature .assess-card .assess-content ul {
-    line-height: 18px;
+    line-height: 21px;
+    padding-left: 14px;
+    font-size: 11px;
   }
   .feature-page.Why-choose-us .card-choose.active.col-md-2 {
     width: 100%;
   }
+  .trove-skills .skill-wp-trove .skill-card {
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+  }
+  footer .footer-wrapper {
+    border-radius: 6px;
+  }
+  .page-header-troven p {
+    margin-bottom: 0;
+  }
+  .trove-skills .skill-wp-trove {
+    padding: 20px;
+  }
+  .trove-skills .skill-wp-trove .skill-card h3, .trove-skills .skill-wp-trove .skill-card .h3 {
+    margin-bottom: 11px;
+    font-size: 15px;
+  }
   .faqs {
     padding-top: 50px;
-    padding-bottom: 120px;
+    padding-bottom: 60px;
   }
   .pricing-plan {
     padding: 50px 0;
@@ -14281,8 +14313,6 @@ footer .footer-bottom a:hover {
   }
   .pricing-card {
     padding-top: 20px;
-    width: 100%;
-    zoom: 0.5;
   }
   .checkout-footer h4, .checkout-footer .h4 {
     font-size: 22px;
@@ -14299,6 +14329,20 @@ footer .footer-bottom a:hover {
   .faqs .accordion-button::after {
     width: 20px;
     height: 20px;
+  }
+  .assess-feature .assess-card .assess-content h4, .assess-feature .assess-card .assess-content .h4 {
+    font-size: 14px;
+  }
+  .pricing-plan {
+    height: 655px;
+    -webkit-transform: scale(0.5);
+    -webkit-transform-origin: top left;
+  }
+  .pricing-card {
+    width: 211%;
+  }
+  .pricing-plan .container {
+    max-width: 100%;
   }
 }
 .trovenloader {

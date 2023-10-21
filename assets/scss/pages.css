@@ -252,6 +252,8 @@ footer .footer-bottom a:hover {
 
 .hero-home {
   padding-top: 100px;
+  position: relative;
+  z-index: 1;
 }
 .hero-home h1 {
   font-size: 47px;
@@ -1102,10 +1104,10 @@ footer .footer-bottom a:hover {
   width: 100%;
 }
 .q-type .left-q .coding-challange {
-  margin: -41px -21px;
+  margin: -20px 0px;
 }
 .q-type .left-q .coding-challange img {
-  max-width: 100%;
+  width: 100%;
 }
 .q-type .left-q .q-header {
   padding: 30px 40px;
