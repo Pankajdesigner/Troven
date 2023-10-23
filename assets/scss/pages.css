@@ -355,6 +355,7 @@ footer .footer-bottom a:hover {
 .why-troven .troven-card img {
   max-width: 470px;
   box-shadow: 0 0 15px rgba(58, 55, 55, 0.031372549);
+  height: auto;
 }
 .why-troven .troven-card .content {
   padding: 0 50px;
@@ -509,6 +510,7 @@ footer .footer-bottom a:hover {
 }
 .partner li img {
   max-width: 50%;
+  height: auto;
   transition: 0.5s;
   filter: grayscale(100%);
 }
@@ -616,19 +618,19 @@ footer .footer-bottom a:hover {
   position: relative;
 }
 .Why-choose-us .one .inner-content-choose {
-  background-image: url(../img/why-choose-us/WHY1.png);
+  background-image: url(../img/why-choose-us/WHY1.webp);
 }
 .Why-choose-us .two .inner-content-choose {
-  background-image: url(../img/why-choose-us/WHY2.png);
+  background-image: url(../img/why-choose-us/WHY2.webp);
 }
 .Why-choose-us .three .inner-content-choose {
-  background-image: url(../img/why-choose-us/WHY3.png);
+  background-image: url(../img/why-choose-us/WHY3.webp);
 }
 .Why-choose-us .four .inner-content-choose {
-  background-image: url(../img/why-choose-us/WHY4.png);
+  background-image: url(../img/why-choose-us/WHY4.webp);
 }
 .Why-choose-us .five .inner-content-choose {
-  background-image: url(../img/why-choose-us/WHY5.png);
+  background-image: url(../img/why-choose-us/WHY5.webp);
 }
 
 .Home-plan {
@@ -813,6 +815,7 @@ footer .footer-bottom a:hover {
 }
 .troven-journey .slider-swipe .testimonials .client-pic img {
   max-width: 380px;
+  height: auto;
 }
 .troven-journey .slider-swipe .swiper-button-prev {
   bottom: 0;
@@ -920,7 +923,7 @@ footer .footer-bottom a:hover {
 
 .page-header-troven {
   background-color: #0560FD;
-  background-image: url(../img/page-header-bg.png);
+  background-image: url(../img/webp/page-header-bg.webp);
   background-size: cover;
   background-position: center;
   padding: 100px 50px;
@@ -952,6 +955,7 @@ footer .footer-bottom a:hover {
 }
 .assess-feature .assess-card img {
   max-width: 80%;
+  height: auto;
 }
 .assess-feature .assess-card .assess-content {
   padding-top: 40px;
@@ -1375,7 +1379,7 @@ footer .footer-bottom a:hover {
 }
 .pricing-plan .price-custom .custom-plan-inner {
   background: #0560FD;
-  background-image: url(../img/page-header-bg.png);
+  background-image: url(../img/webp/page-header-bg.webp);
   background-size: 1600px;
   background-position: center;
   color: #F8FAFE;
@@ -1386,7 +1390,7 @@ footer .footer-bottom a:hover {
   border-radius: 20px;
 }
 .pricing-plan .price-custom .custom-plan-inner .left-custom {
-  width: 550px;
+  width: 566px;
 }
 .pricing-plan .price-custom .custom-plan-inner .right-custom {
   text-align: center;

@@ -405,6 +405,7 @@ footer{
         img{
             max-width: 470px;
             box-shadow: 0 0 15px #3a373708;
+            height: auto;
         }
         .content{
             padding: 0 50px;
@@ -582,6 +583,7 @@ footer{
 
         img{
             max-width: 50%;
+            height: auto;
             transition: $transition-small;
             filter: grayscale(100%);
         }
@@ -720,19 +722,19 @@ footer{
 
 
     .one .inner-content-choose{
-        background-image: url(../img/why-choose-us/WHY1.png); 
+        background-image: url(../img/why-choose-us/WHY1.webp); 
     }
     .two .inner-content-choose{
-        background-image: url(../img/why-choose-us/WHY2.png); 
+        background-image: url(../img/why-choose-us/WHY2.webp); 
     }
     .three .inner-content-choose{
-        background-image: url(../img/why-choose-us/WHY3.png); 
+        background-image: url(../img/why-choose-us/WHY3.webp); 
     }
     .four .inner-content-choose{
-        background-image: url(../img/why-choose-us/WHY4.png); 
+        background-image: url(../img/why-choose-us/WHY4.webp); 
     }
     .five .inner-content-choose{
-        background-image: url(../img/why-choose-us/WHY5.png); 
+        background-image: url(../img/why-choose-us/WHY5.webp); 
     }
  
 }
@@ -1003,6 +1005,7 @@ footer{
             .client-pic{
                 img{
                     max-width: 380px;
+                    height: auto;
                 }
             }
         }
@@ -1141,7 +1144,7 @@ footer{
 
 .page-header-troven{
     background-color: $primary;
-    background-image: url(../img/page-header-bg.png);
+    background-image: url(../img/webp/page-header-bg.webp);
     background-size: cover;
     background-position: center;
     padding: 100px 50px;
@@ -1179,6 +1182,7 @@ footer{
 
         img{
             max-width: 80%;
+            height: auto;
         }
 
         .assess-content{
@@ -1672,7 +1676,7 @@ footer{
         padding: 20px;
         .custom-plan-inner{
             background: $primary;
-            background-image: url(../img/page-header-bg.png);
+            background-image: url(../img/webp/page-header-bg.webp);
             background-size: 1600px;
             background-position: center;
             color: $white;
@@ -1683,7 +1687,7 @@ footer{
             border-radius: 20px;
 
             .left-custom{
-                width: 550px;
+                width: 566px;
             }
             .right-custom{
                 text-align: center;
