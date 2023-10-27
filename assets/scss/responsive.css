@@ -1,1 +1,887 @@
-/*# sourceMappingURL=responsive.css.map */
+@media (min-width: 1440px) {
+  .pricing-plan .col-md-11 {
+    width: 80%;
+  }
+}
+@media (max-width: 1200px) {
+  .demo .tablet-main {
+    transform: translateX(-50%) scale(0.6);
+  }
+  .Why-choose-us .card-choose.active .pointer-choose {
+    padding: 0px 25px;
+  }
+  .Home-plan .col-md-3 {
+    width: 30%;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 15px 19px;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link.active::after {
+    left: 19px;
+  }
+  .hero-home h1, .hero-home .h1 {
+    font-size: 43px;
+  }
+  .v-1 h2, .v-1 .h2 {
+    font-size: 37.113px;
+  }
+  .why-troven .troven-card .content h3, .why-troven .troven-card .content .h3 {
+    font-size: 20px;
+  }
+  .Why-choose-us .card-choose {
+    height: 410px;
+  }
+  .why-troven .troven-card .content p {
+    font-size: 13px;
+  }
+  .why-troven .troven-card .content ul li {
+    font-size: 13px;
+  }
+  .assess-feature .assess-card {
+    padding: 25px;
+  }
+  .side-tab .col-md-4 {
+    width: 100%;
+  }
+  .side-tab .col-md-8 {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .Why-choose-us .pointer-choose ul {
+    font-size: 13px;
+  }
+  .Why-choose-us .inner-content-choose h4, .Why-choose-us .inner-content-choose .h4 {
+    font-size: 23px;
+  }
+  .Home-plan .col-md-3 {
+    width: 33%;
+  }
+  .title-2 {
+    font-size: 35px;
+  }
+  .troven-journey .header-abput-tt p {
+    font-size: 15px;
+    line-height: 26px;
+    margin: 0;
+  }
+  .troven-journey .slider-swipe {
+    padding: 50px;
+  }
+  .troven-journey .slider-swipe .testimonials .client-msg h4, .troven-journey .slider-swipe .testimonials .client-msg .h4 {
+    font-size: 24px;
+  }
+  .assess-feature .assess-card .assess-content ul {
+    font-size: 13px;
+  }
+  .assess-feature .assess-card .assess-content h4, .assess-feature .assess-card .assess-content .h4 {
+    font-size: 16px;
+  }
+  .Why-choose-us .inner-content-choose h3, .Why-choose-us .inner-content-choose .h3 {
+    font-size: 28px;
+    top: 70%;
+  }
+  .title-3 {
+    font-size: 32px;
+  }
+  .page-header-troven h1, .page-header-troven .h1 {
+    font-size: 36px;
+  }
+  .page-header-troven p {
+    font-size: 18px;
+  }
+  .pricing-plan .price-plan-top .header-plan {
+    min-width: 220px;
+    padding: 37px 30px;
+  }
+  .pricing-plan .price-feature .row-plan .feature-check {
+    min-width: 220px;
+  }
+  .pricing-plan .col-md-11 {
+    width: 100%;
+  }
+  .contact-form .col-md-8 {
+    flex: 0 0 auto;
+    width: 82%;
+    margin: 0 auto;
+  }
+  .assess-feature-icon .assess-card .assess-content p {
+    min-height: 125px;
+  }
+  .assess-feature-icon .assess-card {
+    height: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .navbar-toggler {
+    border: none;
+    text-align: right;
+    width: 46px;
+    padding: 12px 10px;
+    border-radius: 10px;
+  }
+  .navbar-toggler::after {
+    clear: both;
+    content: "";
+  }
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  .navbar-toggler .line-menu-one {
+    width: 20px;
+    height: 1px;
+    margin: 0 auto;
+    border-radius: 6px;
+  }
+  .navbar-toggler .line-menu-two {
+    transition: 0.5s;
+    width: 26px;
+    height: 1px;
+    margin: 6px auto;
+    border-radius: 6px;
+  }
+  .navbar-toggler .line-menu-three {
+    width: 20px;
+    height: 1px;
+    border-radius: 6px;
+    margin: auto;
+  }
+  .navbar-toggler:focus .line-menu-two, .navbar-toggler:hover .line-menu-two {
+    width: 15px;
+    transition: 0.5s;
+  }
+  .demo {
+    height: 780px;
+    margin-top: -105px;
+  }
+  .demo span {
+    display: none;
+  }
+  .troven-nav {
+    padding: 10px 0;
+  }
+  .navbar-collapse {
+    background: #DFE7F8;
+    padding: 10px;
+    padding-bottom: 30px;
+    border-radius: 11px;
+    padding-top: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .demo .tablet-main {
+    transform: translateX(-50%) scale(0.5);
+  }
+  .navbar-brand img {
+    width: 110px;
+    top: 0px;
+    position: relative;
+  }
+  .scrolling .navbar-brand img {
+    top: 1px;
+    width: 110px;
+  }
+  .hero-home h1, .hero-home .h1 {
+    font-size: 30px;
+  }
+  .v-1 h2, .v-1 .h2 {
+    font-size: 26px;
+  }
+  .v-1 hr {
+    margin: 1rem 0;
+  }
+  .why-troven .troven-card {
+    border-radius: 20px;
+    padding: 20px;
+  }
+  .hero-home p {
+    line-height: 130%;
+    font-size: 17px;
+  }
+  .hero-home.v-1 p {
+    line-height: 130%;
+    font-size: 14px;
+    margin-bottom: 15px !important;
+  }
+  .assess-feature-icon .assess-card .assess-content p {
+    min-height: auto;
+    margin-bottom: 15px;
+  }
+  .about-us p {
+    font-size: 14px;
+  }
+  .Why-choose-us .card-choose.active .pointer-choose {
+    top: 135px;
+  }
+  .why-troven .troven-card .content ul {
+    display: none;
+  }
+  .why-troven .troven-card img {
+    max-width: 270px;
+  }
+  .why-troven .troven-card .content {
+    padding: 0 0 0 20px;
+  }
+  .btn {
+    padding: 6px 18px;
+    font-size: 13px;
+  }
+  .side-tab .tabs {
+    max-width: 310px;
+  }
+  .v-1, .why-troven {
+    padding-bottom: 20px;
+    padding-top: 30px;
+  }
+  .side-tab, .partner {
+    padding: 60px 0;
+  }
+  .partner li {
+    min-height: 80px;
+  }
+  .title-2 {
+    font-size: 30px;
+  }
+  .partner .logo-wp-list {
+    margin-top: 20px;
+  }
+  .Why-choose-us .title-2 {
+    margin-bottom: 30px;
+  }
+  .why-troven .troven-card {
+    margin-bottom: 20px;
+  }
+  .Why-choose-us .card-choose {
+    height: 310px;
+  }
+  .Why-choose-us .card-choose.active.col-md-2 {
+    width: 46%;
+  }
+  .feature-page.Why-choose-us .card-choose.active.col-md-2 {
+    width: 50%;
+  }
+  .Why-choose-us .card-choose.col-md-2 {
+    width: 12%;
+  }
+  .Why-choose-us .inner-content-choose h3, .Why-choose-us .inner-content-choose .h3 {
+    font-size: 22px;
+    top: 70%;
+  }
+  .Home-plan .plan-card .plan-features li {
+    font-size: 12px;
+    padding: 7px 0px;
+    background: none;
+  }
+  .Home-plan .plan-card {
+    padding: 60px 20px 40px 20px;
+  }
+  .Home-plan .plan-card.active li {
+    background: none !important;
+  }
+  .faqs .accordion-button {
+    padding: 20px;
+    font-size: 14px;
+  }
+  .faqs .accordion-body {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 20px;
+  }
+  .troven-journey .troven-number h4, .troven-journey .troven-number .h4 {
+    font-size: 35px;
+  }
+  .troven-journey .troven-number p {
+    font-size: 14px;
+  }
+  .troven-journey .slider-swipe {
+    padding: 30px;
+    margin-top: 35px;
+  }
+  .troven-journey .slider-swipe .testimonials .client-pic img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .client-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    overflow: hidden;
+    position: relative;
+    top: -75px;
+  }
+  .troven-journey .slider-swipe .testimonials .client-msg {
+    min-width: 100%;
+    padding-right: 0;
+  }
+  .troven-journey .slider-swipe .testimonials {
+    flex-wrap: wrap;
+  }
+  .troven-journey .slider-swipe .testimonials .client-msg h4, .troven-journey .slider-swipe .testimonials .client-msg .h4 {
+    margin-bottom: 35px;
+  }
+  .troven-journey .slider-swipe .testimonials .client-msg p {
+    margin-bottom: 40px;
+    padding-left: 70px;
+  }
+  .troven-journey .slider-swipe .testimonials .client-msg p::after {
+    display: none;
+  }
+  footer .footer-wrapper {
+    padding: 30px;
+  }
+  footer .footer-top .footer-contact div:first-child {
+    margin-right: 20px;
+  }
+  footer .footer-top {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  .footer-logo img {
+    width: 110px;
+  }
+  footer .footer-top p, footer .footer-top .footer-contact span, footer .footer-bottom p, footer .footer-bottom a {
+    font-size: 14px;
+  }
+  .troven-journey .slider-swipe .testimonials .client-msg h4::after, .troven-journey .slider-swipe .testimonials .client-msg .h4::after {
+    transform: scale(0.6);
+    left: -28px;
+    top: -28px;
+  }
+  footer {
+    padding-bottom: 60px;
+  }
+  .about-us {
+    padding: 60px 0;
+    padding-top: 0;
+  }
+  .troven-journey {
+    padding: 0;
+  }
+  .troven-journey hr {
+    margin: 30px 0;
+  }
+  .skills-toven li {
+    padding: 6px 16px;
+    gap: 10px;
+    font-size: 14px;
+  }
+  .skills-toven li img {
+    width: 20px;
+  }
+  .skills-toven .skill-top-section .inner-box h4, .skills-toven .skill-top-section .inner-box .h4 {
+    font-size: 35px;
+  }
+  .skills-toven .skill-top-section {
+    width: 320px;
+  }
+  .Why-choose-us {
+    padding: 0;
+  }
+  .Home-plan {
+    padding: 60px 0;
+  }
+  .skills-toven .skill-top-section .inner-box {
+    padding: 30px;
+  }
+  .skills-toven .skill-top-section .inner-box p {
+    font-size: 13px;
+  }
+  .assess-feature-icon .col-md-4 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .assess-feature-icon {
+    padding: 60px 0;
+  }
+  .page-header-troven {
+    padding: 60px 20px;
+  }
+  .q-wrapper {
+    flex-wrap: wrap;
+  }
+  .q-type .right-q {
+    padding: 0;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .q-type .left-q {
+    width: 100%;
+  }
+  .q-type .right-q li {
+    margin-top: 10px;
+  }
+  .q-type .right-q li {
+    padding: 12px 30px;
+  }
+  .trove-skills .skill-wp-trove {
+    padding: 30px;
+  }
+  .trove-skills .skill-wp-trove .skill-card li {
+    padding: 5px 11px;
+    gap: 10px;
+    margin: 5px;
+    font-size: 12px;
+  }
+  .trove-skills .skill-wp-trove .skill-card li img {
+    width: 15px;
+  }
+  .trove-skills .skill-wp-trove .skill-card h3, .trove-skills .skill-wp-trove .skill-card .h3 {
+    margin-bottom: 9px;
+    font-size: 18px;
+  }
+  .skill-card {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  .q-type .left-q .main-q {
+    padding: 40px 40px;
+  }
+  .q-type .left-q .main-q .q-answers .answer-select {
+    padding: 9px 10px;
+    font-size: 13px;
+  }
+  .q-type .left-q .main-q h5, .q-type .left-q .main-q .h5 {
+    font-size: 24px;
+    margin-bottom: 13px;
+  }
+  .q-type {
+    padding-bottom: 60px;
+  }
+  .trove-skills {
+    padding-bottom: 60px;
+  }
+  .assess-feature .col-md-4 {
+    width: 50%;
+  }
+  .pricing-card {
+    overflow: auto;
+    padding-top: 20px;
+  }
+  .price-plan-top, .price-feature, .price-custom {
+    width: 100%;
+  }
+  .pricing-plan .price-feature .row-plan {
+    padding: 10px 0;
+  }
+  .pricing-plan .price-feature .row-plan .name-feature, .feature-check {
+    font-size: 13px;
+  }
+  .pricing-plan .price-feature .row-plan .feature-check img {
+    width: 14px;
+  }
+  .pricing-plan .price-plan-top .header-plan {
+    min-width: 170px;
+    padding: 40px 20px;
+  }
+  .pricing-plan .price-feature .row-plan .feature-check {
+    min-width: 170px;
+  }
+  .pricing-plan .price-plan-top .popular-center {
+    top: -6px;
+  }
+  .pricing-plan .price-feature .row-plan .name-feature {
+    padding-left: 10px;
+  }
+  .pricing-plan .price-plan-top .header-plan h2, .pricing-plan .price-plan-top .header-plan .h2 {
+    font-size: 24px;
+  }
+  .pricing-plan .price-plan-top .header-plan span {
+    font-size: 15px;
+  }
+  .header-plan .btn {
+    padding: 4px 16px;
+  }
+  .pricing-plan .price-custom .custom-plan-inner h4, .pricing-plan .price-custom .custom-plan-inner .h4 {
+    font-size: 20px;
+  }
+  .pricing-plan .price-custom .custom-plan-inner p {
+    font-size: 13px;
+  }
+  .form-control {
+    font-size: 14px;
+  }
+  .about-us .troven-about-content .col-md-8, .about-us .troven-about-content .col-md-4 {
+    width: 100%;
+  }
+  .about-us .troven-about-content .col-md-8 p {
+    padding: 0;
+  }
+  .assess-feature .assess-card img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .why-troven .troven-card .content ul {
+    display: block;
+    margin-bottom: 20px;
+  }
+  body {
+    background: #F0F5FE;
+  }
+  .pricing-plan .price-feature .row-plan .name-feature, .feature-check {
+    font-size: 16px;
+  }
+  .navbar-toggler {
+    height: 39px;
+  }
+  .navbar-toggler.active {
+    height: 39px;
+  }
+  .navbar-toggler.active .line-menu-one {
+    transform: rotate(45deg);
+    position: relative;
+    top: 1px;
+  }
+  .navbar-toggler.active .line-menu-two {
+    width: 0;
+    margin: 0;
+  }
+  .navbar-toggler.active .line-menu-three {
+    transform: rotate(-45deg);
+  }
+  .hero-home {
+    padding: 50px 0;
+  }
+  .hero-home .container {
+    display: flex;
+    min-height: calc(100vh - 167px);
+    align-items: center;
+  }
+  .hero-home img {
+    margin-top: 50px;
+  }
+  .hero-home .btn {
+    margin-right: 15px;
+  }
+  .right-btn {
+    margin-top: 10px;
+  }
+  .troven-nav .right-btn .btn:last-child {
+    margin-left: 10px;
+  }
+  .demo {
+    display: none;
+  }
+  .btn.big {
+    padding: 10px 16px;
+  }
+  .hero-home.v-1 .container {
+    display: block;
+    height: auto;
+  }
+  .hero-home.v-1 img {
+    margin-top: 30px;
+  }
+  .hero-home.v-1 .p-l-5 {
+    padding-left: 0 !important;
+  }
+  .why-troven .troven-card {
+    flex-wrap: wrap;
+  }
+  .why-troven .troven-card img {
+    max-width: 100%;
+  }
+  .why-troven .troven-card .content {
+    padding: 0;
+    padding-top: 25px;
+  }
+  .why-troven .troven-card .content p {
+    margin-bottom: 15px;
+    margin-top: 0;
+  }
+  .side-tab .tabs {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+  .side-tab .img-wp-side-tab {
+    border-radius: 12px;
+    padding: 10px;
+  }
+  .side-tab .img-wp-side-tab img {
+    border-radius: 9px;
+  }
+  .side-tab p, .side-tab ul li {
+    font-size: 14px;
+  }
+  .side-tab .col-md-8 {
+    margin-top: 10px;
+  }
+  .side-tab hr {
+    margin: 15px 0;
+  }
+  .side-tab .col-md-8 {
+    padding-left: 15px;
+  }
+  .logo-row {
+    flex-wrap: wrap;
+  }
+  .partner li {
+    width: 50%;
+    border: none;
+  }
+  .partner .col-md-10 {
+    margin: 0;
+    width: 100%;
+  }
+  .Why-choose-us .card-choose.col-md-2 {
+    width: 100%;
+  }
+  .Why-choose-us .card-choose.active.col-md-2 {
+    width: 100%;
+  }
+  .Why-choose-us .card-choose {
+    margin-bottom: 15px;
+  }
+  .Why-choose-us .card-choose {
+    height: 260px;
+  }
+  .Why-choose-us .card-choose.active .pointer-choose {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .Home-plan .col-md-3 {
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .Home-plan .plan-card .btn {
+    display: inline-block;
+    width: auto;
+  }
+  .header-abput-tt .offset-1.col-md-5 {
+    margin: 0;
+    width: 100%;
+  }
+  .troven-number .col-md-3 {
+    text-align: center !important;
+    margin-bottom: 20px;
+  }
+  .troven-journey .slider-swipe .testimonials .client-msg h4, .troven-journey .slider-swipe .testimonials .client-msg .h4 {
+    font-size: 20px;
+  }
+  .about-us img {
+    margin-bottom: 20px;
+  }
+  .troven-journey .troven-number h4, .troven-journey .troven-number .h4 {
+    font-size: 49px;
+  }
+  footer .footer-top {
+    flex-wrap: wrap;
+  }
+  .footer-contact {
+    width: 100%;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  footer .footer-top {
+    margin-bottom: 15px;
+    padding-bottom: 35px;
+    padding-top: 10px;
+  }
+  .footer-bottom {
+    flex-wrap: wrap;
+  }
+  .link-footer {
+    padding-top: 10px;
+    border-top: 1px solid #DFE7F8;
+    margin-top: 14px;
+  }
+  footer .footer-bottom a {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+  .v-1 {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+  }
+  .why-troven {
+    padding-bottom: 50px;
+  }
+  .Home-plan .title-2 {
+    padding-bottom: 20px;
+  }
+  .side-tab h3, .side-tab .h3 {
+    font-size: 26px;
+  }
+  .title-2 {
+    font-size: 24px;
+  }
+  .partner .logo-wp-list {
+    margin-top: 0px;
+  }
+  .Why-choose-us .title-2 {
+    margin-bottom: 20px;
+  }
+  .card-wp-troven:last-child .troven-card {
+    margin-bottom: 0;
+  }
+  .Home-plan .plan-card .plan-features li {
+    font-size: 14px;
+  }
+  .q-answers {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .q-type .left-q .main-q .q-answers .answer-select {
+    width: 48%;
+    gap: 6px;
+  }
+  .q-footer .pagination {
+    display: none;
+  }
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .q-type .left-q .main-q .q-answers input[type=radio], .q-type .left-q .main-q .q-answers input[type=checkbox] {
+    width: 15px;
+    height: 15px;
+  }
+  .q-type .left-q .main-q .q-answers {
+    gap: 10px;
+  }
+  .q-type .left-q .q-footer {
+    justify-content: end;
+    margin: 0 20px;
+  }
+  .q-type .left-q .main-q {
+    padding: 20px 0px;
+    margin: 0 20px;
+  }
+  .q-type .right-q {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .page-header-troven h1, .page-header-troven .h1 {
+    font-size: 31px;
+  }
+  .assess-feature-icon {
+    padding: 50px 0;
+  }
+  .trove-skills {
+    padding-bottom: 50px;
+  }
+  .q-type .title-3 {
+    margin-bottom: 20px;
+  }
+  .title-3 {
+    font-size: 26px;
+  }
+  .q-type .right-q li {
+    font-size: 14px;
+    margin: 0;
+  }
+  .q-type .left-q .main-q h5, .q-type .left-q .main-q .h5 {
+    font-size: 18px;
+    margin-bottom: 13px;
+  }
+  .q-type .left-q .q-header {
+    padding: 20px 20px;
+  }
+  .q-type .left-q .main-q .q-answers input[type=radio] {
+    width: 15px;
+    height: 15px;
+  }
+  .assess-feature .col-md-4 {
+    width: 100%;
+  }
+  .assess-feature .assess-card {
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .assess-feature .assess-card img {
+    max-width: 103px;
+  }
+  .assess-feature .assess-card .assess-content {
+    padding: 0;
+  }
+  .assess-feature .assess-card .assess-img {
+    position: absolute;
+    right: 10px;
+    top: 19px;
+    opacity: 1;
+  }
+  .assess-feature {
+    padding: 50px 0;
+  }
+  .assess-feature .assess-card {
+    padding: 15px;
+    display: flex;
+    gap: 18px;
+    align-items: center;
+  }
+  .assess-feature .col-md-4 {
+    margin-bottom: 15px;
+  }
+  .assess-feature .assess-card .assess-content ul {
+    line-height: 21px;
+    padding-left: 14px;
+    font-size: 11px;
+  }
+  .feature-page.Why-choose-us .card-choose.active.col-md-2 {
+    width: 100%;
+  }
+  .trove-skills .skill-wp-trove .skill-card {
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+  }
+  footer .footer-wrapper {
+    border-radius: 6px;
+  }
+  .page-header-troven p {
+    margin-bottom: 0;
+  }
+  .trove-skills .skill-wp-trove {
+    padding: 20px;
+  }
+  .trove-skills .skill-wp-trove .skill-card h3, .trove-skills .skill-wp-trove .skill-card .h3 {
+    margin-bottom: 11px;
+    font-size: 15px;
+  }
+  .faqs {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+  .pricing-plan {
+    padding: 50px 0;
+  }
+  .price-plan-top, .price-feature, .price-custom {
+    width: 100%;
+  }
+  .pricing-card {
+    padding-top: 20px;
+  }
+  .checkout-footer h4, .checkout-footer .h4 {
+    font-size: 22px;
+  }
+  .contact-form .col-md-8 {
+    width: 100%;
+  }
+  .form-control {
+    font-size: 12px;
+  }
+  .contact-form {
+    padding-bottom: 0;
+  }
+  .faqs .accordion-button::after {
+    width: 20px;
+    height: 20px;
+  }
+  .assess-feature .assess-card .assess-content h4, .assess-feature .assess-card .assess-content .h4 {
+    font-size: 14px;
+  }
+  .pricing-plan {
+    height: 705px;
+    transform: scale(0.5);
+    transform-origin: top left;
+  }
+  .pricing-card {
+    width: 211%;
+  }
+  .pricing-plan .container {
+    max-width: 100%;
+  }
+}/*# sourceMappingURL=responsive.css.map */

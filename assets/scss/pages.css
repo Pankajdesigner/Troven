@@ -124,6 +124,14 @@ p {
   line-height: 115%;
 }
 
+.navbar-toggler {
+  background: #0560FD;
+}
+
+.line-menu-one, .line-menu-two, .line-menu-three {
+  background: #F8FAFE;
+}
+
 .troven-nav {
   background: rgba(255, 255, 255, 0.83);
   -webkit-backdrop-filter: blur(44px);
@@ -212,7 +220,7 @@ footer .footer-top .footer-contact div:first-child {
 footer .footer-top .footer-contact span {
   color: #212325;
   opacity: 0.6;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
 }
 footer .footer-top ul {
@@ -232,14 +240,14 @@ footer .footer-bottom {
 }
 footer .footer-bottom p {
   color: black;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   margin-bottom: 0;
   font-family: var(--main-font);
 }
 footer .footer-bottom a {
   color: black;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   margin-bottom: 0;
   text-decoration: none;
@@ -328,8 +336,8 @@ footer .footer-bottom a:hover {
 }
 .v-1 p {
   margin-bottom: 20px !important;
-  font-size: 16px;
-  line-height: 140%;
+  font-size: 17px;
+  line-height: 170%;
 }
 .v-1 hr {
   margin: 2rem 0;
@@ -382,7 +390,7 @@ footer .footer-bottom a:hover {
 }
 .why-troven .troven-card .content ul li {
   display: block;
-  font-size: 15px;
+  font-size: 16px;
   margin-bottom: 14px;
 }
 .why-troven .troven-card .content ul li img {
@@ -444,10 +452,11 @@ footer .footer-bottom a:hover {
 .side-tab h3 {
   font-size: 32px;
   font-weight: 400;
+  margin-bottom: 20px;
 }
 .side-tab p {
-  font-size: 16px;
-  font-weight: 300;
+  font-size: 17px;
+  font-weight: 400;
 }
 .side-tab hr {
   margin: 25px 0;
@@ -468,7 +477,7 @@ footer .footer-bottom a:hover {
 }
 .side-tab ul li {
   font-family: var(--sub-font);
-  font-size: 16px;
+  font-size: 17px;
   font-style: italic;
   font-weight: 400;
   line-height: 208%;
@@ -584,7 +593,7 @@ footer .footer-bottom a:hover {
   display: block;
   position: absolute;
   left: 0;
-  top: 215px;
+  top: 185px;
   min-width: 375px;
   padding: 0 50px;
 }
@@ -716,10 +725,10 @@ footer .footer-bottom a:hover {
   margin-bottom: 30px;
 }
 .Home-plan .plan-card .plan-features li {
-  font-size: 14px;
+  font-size: 15px;
   color: #5E6E8C;
-  font-weight: 300;
-  padding: 8px 0px;
+  font-weight: 400;
+  padding: 11px 0px;
   list-style: none;
   padding-left: 25px;
   background: url(../../assets/img/icons/check.svg) no-repeat center left;
@@ -874,8 +883,8 @@ footer .footer-bottom a:hover {
 .skills-toven .skill-top-section .inner-box p {
   color: #5E6E8C;
   text-align: center;
-  font-size: 15px;
-  font-weight: 300;
+  font-size: 16px;
+  font-weight: 400;
   margin: 0;
 }
 .skills-toven .list-row {
@@ -907,7 +916,7 @@ footer .footer-bottom a:hover {
   padding: 100px 0;
 }
 .about-us p {
-  font-size: 16px;
+  font-size: 17px;
   font-family: var(--main-font);
   font-weight: 300;
   line-height: 169.5%;
@@ -935,7 +944,7 @@ footer .footer-bottom a:hover {
 }
 .page-header-troven p {
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
   font-family: var(--sub-font);
 }
 
@@ -969,9 +978,9 @@ footer .footer-bottom a:hover {
 .assess-feature .assess-card .assess-content ul {
   padding-left: 15px;
   margin: 0;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
-  line-height: 25PX;
+  line-height: 33PX;
   color: #5E6E8C;
 }
 
@@ -1044,20 +1053,21 @@ footer .footer-bottom a:hover {
   font-style: normal;
   font-weight: 500;
   color: #212325;
+  margin-bottom: 15px;
 }
 .assess-feature-icon .assess-card .assess-content p {
-  font-family: var(--sub-font);
+  font-family: var(--main-font);
   margin: 0;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
-  line-height: 21px;
+  line-height: 25px;
   color: #5E6E8C;
 }
 .assess-feature-icon .assess-card .assess-content ul {
   padding-left: 15px;
   margin: 0;
   margin-top: 15px;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
   line-height: 30px;
   color: #5E6E8C;
@@ -1287,7 +1297,7 @@ footer .footer-bottom a:hover {
   color: #212325;
 }
 .pricing-plan .price-plan-top .header-plan p {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
   color: #5E6E8C;
 }
@@ -1400,7 +1410,7 @@ footer .footer-bottom a:hover {
   padding: 15px 40px;
 }
 .pricing-plan .price-custom .custom-plan-inner p {
-  font-size: 15px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   margin-bottom: 0;
