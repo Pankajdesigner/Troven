@@ -1271,6 +1271,35 @@ footer .footer-bottom a:hover {
 .pricing-plan {
   padding: 100px 0;
 }
+.pricing-plan .plan-filter {
+  display: inline-block;
+}
+.pricing-plan .plan-filter h4 {
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 19px;
+  margin-bottom: 10px;
+}
+.pricing-plan .plan-filter .radio-plan-group {
+  font-size: 15px;
+  padding: 20px 20px;
+  border-radius: 12px;
+  border: 1px solid #DFE7F8;
+}
+.pricing-plan .plan-filter .radio-plan-group .form-check {
+  margin-bottom: 10px;
+}
+.pricing-plan .plan-filter .radio-plan-group .form-check:last-child {
+  margin-bottom: 0;
+}
+.pricing-plan .plan-filter .radio-plan-group .form-check span {
+  display: inline-block;
+  font-size: 13px;
+  padding: 4px 10px;
+  background: #DFE7F8;
+  border-radius: 30px;
+  margin-left: 10px;
+}
 .pricing-plan .pricing-card {
   border-radius: 32px;
   background: #F8FAFE;
@@ -1283,8 +1312,8 @@ footer .footer-bottom a:hover {
 }
 .pricing-plan .price-plan-top .header-plan {
   text-align: center;
-  min-width: 250px;
-  padding: 50px;
+  min-width: 230px;
+  padding: 50px 0;
 }
 .pricing-plan .price-plan-top .header-plan span {
   color: #5E6E8C;
@@ -1368,7 +1397,7 @@ footer .footer-bottom a:hover {
   background: none;
 }
 .pricing-plan .price-feature .row-plan .feature-check {
-  min-width: 250px;
+  min-width: 230px;
   text-align: center;
   display: flex;
   justify-content: center;

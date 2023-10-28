@@ -13250,6 +13250,35 @@ footer .footer-bottom a:hover {
 .pricing-plan {
   padding: 100px 0;
 }
+.pricing-plan .plan-filter {
+  display: inline-block;
+}
+.pricing-plan .plan-filter h4, .pricing-plan .plan-filter .h4 {
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 19px;
+  margin-bottom: 10px;
+}
+.pricing-plan .plan-filter .radio-plan-group {
+  font-size: 15px;
+  padding: 20px 20px;
+  border-radius: 12px;
+  border: 1px solid #DFE7F8;
+}
+.pricing-plan .plan-filter .radio-plan-group .form-check {
+  margin-bottom: 10px;
+}
+.pricing-plan .plan-filter .radio-plan-group .form-check:last-child {
+  margin-bottom: 0;
+}
+.pricing-plan .plan-filter .radio-plan-group .form-check span {
+  display: inline-block;
+  font-size: 13px;
+  padding: 4px 10px;
+  background: #DFE7F8;
+  border-radius: 30px;
+  margin-left: 10px;
+}
 .pricing-plan .pricing-card {
   border-radius: 32px;
   background: #F8FAFE;
@@ -13262,8 +13291,8 @@ footer .footer-bottom a:hover {
 }
 .pricing-plan .price-plan-top .header-plan {
   text-align: center;
-  min-width: 250px;
-  padding: 50px;
+  min-width: 230px;
+  padding: 50px 0;
 }
 .pricing-plan .price-plan-top .header-plan span {
   color: #5E6E8C;
@@ -13347,7 +13376,7 @@ footer .footer-bottom a:hover {
   background: none;
 }
 .pricing-plan .price-feature .row-plan .feature-check {
-  min-width: 250px;
+  min-width: 230px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -13504,6 +13533,13 @@ footer .footer-bottom a:hover {
   .pricing-plan .col-md-11 {
     width: 80%;
   }
+  .pricing-plan .plan-filter .radio-plan-group {
+    padding: 23px 26px;
+  }
+  .pricing-plan .plan-filter {
+    display: block;
+    width: 95%;
+  }
 }
 @media (max-width: 1200px) {
   .demo .tablet-main {
@@ -13612,6 +13648,9 @@ footer .footer-bottom a:hover {
   .assess-feature-icon .assess-card {
     height: 100%;
   }
+  .pricing-plan .plan-filter .radio-plan-group {
+    padding: 16px 15px;
+  }
 }
 @media (max-width: 991px) {
   .navbar-toggler {
@@ -13695,6 +13734,13 @@ footer .footer-bottom a:hover {
     border-radius: 20px;
     padding: 20px;
   }
+  .pricing-plan .plan-filter .radio-plan-group {
+    font-size: 13px;
+    padding: 20px 10px;
+  }
+  .pricing-plan .plan-filter h4, .pricing-plan .plan-filter .h4 {
+    font-size: 14px;
+  }
   .hero-home p {
     line-height: 130%;
     font-size: 17px;
@@ -13707,6 +13753,12 @@ footer .footer-bottom a:hover {
   .assess-feature-icon .assess-card .assess-content p {
     min-height: auto;
     margin-bottom: 15px;
+  }
+  .pricing-plan .plan-filter .radio-plan-group .form-check span {
+    margin-left: 0;
+    margin-top: 10px;
+    display: block;
+    margin-top: 3px;
   }
   .about-us p {
     font-size: 14px;
@@ -14021,8 +14073,12 @@ footer .footer-bottom a:hover {
   body {
     background: #F0F5FE;
   }
-  .pricing-plan .price-feature .row-plan .name-feature, .feature-check {
-    font-size: 16px;
+  .pricing-plan .plan-filter .radio-plan-group .form-check span {
+    margin: 0;
+    margin-top: 3px;
+  }
+  .pricing-plan .plan-filter .radio-plan-group {
+    font-size: 13px;
   }
   .navbar-toggler {
     height: 39px;

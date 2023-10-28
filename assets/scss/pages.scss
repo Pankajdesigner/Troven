@@ -1553,6 +1553,39 @@ footer{
 .pricing-plan{
     padding: 100px 0;
 
+    .plan-filter{
+        display: inline-block;
+        h4{
+            font-size: 16px;
+            font-weight: 500;
+            padding-left: 19px;
+            margin-bottom: 10px;
+        } 
+        .radio-plan-group{
+            font-size: 15px;
+            padding: 20px 20px;
+            border-radius: 12px;
+            border: 1px solid $smoke;
+    
+            .form-check{
+                margin-bottom: 10px;
+    
+                &:last-child{
+                    margin-bottom: 0;
+                }
+    
+                span{
+                    display: inline-block;
+                    font-size: 13px;
+                    padding: 4px 10px;
+                    background: $smoke;
+                    border-radius: 30px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
     .pricing-card{
         border-radius: 32px;
         background: $white;
@@ -1568,8 +1601,8 @@ footer{
 
         .header-plan{
             text-align: center;
-            min-width: 250px;
-            padding: 50px;
+            min-width: 230px;
+            padding: 50px 0;
             span{
                 color: $grey;
                 font-size: 18px; 
@@ -1661,7 +1694,7 @@ footer{
 
 
             .feature-check{
-                min-width: 250px;
+                min-width: 230px;
                 text-align: center; 
                 display: flex;
                 justify-content: center;
