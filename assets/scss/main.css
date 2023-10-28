@@ -13281,6 +13281,7 @@ footer .footer-bottom a:hover {
 .pricing-plan .plan-filter .radio-plan-group .form-check .year-span {
   margin-right: 10px;
   display: inline-block;
+  margin-bottom: 3px;
 }
 .pricing-plan .pricing-card {
   border-radius: 32px;
@@ -13543,6 +13544,11 @@ footer .footer-bottom a:hover {
   .pricing-plan .plan-filter {
     display: block;
     width: 95%;
+  }
+}
+@media (max-width: 1400px) {
+  .Home-plan .col-md-3 {
+    width: 33.33333333%;
   }
 }
 @media (max-width: 1200px) {
