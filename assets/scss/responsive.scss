@@ -135,6 +135,9 @@
 
 // tablet
 @media (max-width:991px){
+    .pricing-plan .plan-filter{
+        display: block;
+    }
     .navbar-toggler{
         border: none;
         text-align: right;  
@@ -224,13 +227,7 @@
     .assess-feature-icon .assess-card .assess-content p{
         min-height: auto;
         margin-bottom: 15px;
-    }
-    .pricing-plan .plan-filter .radio-plan-group .form-check span{
-        margin-left: 0;
-        margin-top: 10px;
-        display: block;
-        margin-top: 3px;
-    }
+    } 
     .about-us p{
         font-size: 14px;
     }
@@ -550,12 +547,7 @@
     }
     body{
         background: #F0F5FE;
-    }
-    .pricing-plan .plan-filter .radio-plan-group .form-check span{
-        margin: 0;
-        margin-top: 3px;
-    }
-    
+    } 
     .pricing-plan .plan-filter .radio-plan-group{
         font-size: 13px;
     }

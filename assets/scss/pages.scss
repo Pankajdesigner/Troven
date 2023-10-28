@@ -1578,9 +1578,13 @@ footer{
                     display: inline-block;
                     font-size: 13px;
                     padding: 4px 10px;
-                    background: $Yellow;
-                    border-radius: 30px;
-                    margin-left: 10px;
+                    background: $smoke;
+                    border-radius: 30px; 
+                }
+                .year-span{
+                    margin-right: 10px;
+                    display: inline-block;
+                    margin-bottom: 3px;
                 }
             }
         }
