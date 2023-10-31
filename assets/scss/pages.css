@@ -1552,4 +1552,91 @@ footer .footer-bottom a:hover {
 }
 .checkout-footer .btn.big {
   padding: 15px 30px;
+}
+
+.user-manual {
+  padding: 100px 0;
+}
+.user-manual .side-nav {
+  background: #F8FAFE;
+  padding: 20px;
+  border-radius: 8px;
+  position: sticky;
+  top: 90px;
+  left: 0;
+}
+.user-manual .side-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.user-manual .side-nav ul a {
+  display: block;
+  padding: 12px 0;
+  text-decoration: none;
+  color: #5E6E8C;
+  padding-left: 15px;
+  font-weight: 500;
+}
+.user-manual .side-nav ul a.active {
+  color: #0560FD;
+}
+.user-manual .manual-content {
+  background: #F8FAFE;
+  padding: 60px;
+  border-radius: 8px;
+}
+.user-manual .manual-content h2 {
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.user-manual .manual-content h4 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #4a5a77;
+}
+.user-manual .manual-content .titile-manual {
+  padding: 30px 0;
+  padding-top: 40px;
+}
+.user-manual hr {
+  margin: 5rem 0;
+  border-top: 1px solid #3c5269;
+}
+.user-manual .manual-sub-conten p {
+  font-size: 18px;
+  font-family: var(--main-font);
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #3c5269;
+}
+.user-manual .manual-sub-conten p b {
+  font-weight: 600;
+}
+.user-manual .manual-sub-conten strong {
+  font-size: 18px;
+}
+.user-manual .manual-sub-conten .sub-tt-user-manual {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.user-manual .manual-sub-conten .sub-tt-user-manual b {
+  font-size: 22px;
+  font-weight: 600;
+}
+.user-manual .manual-sub-conten ul {
+  padding-left: 15px;
+  color: #5E6E8C;
+}
+.user-manual .manual-sub-conten li {
+  padding-bottom: 15px;
+}
+.user-manual .manual-sub-conten li li {
+  padding-top: 10px;
+  padding-bottom: 0;
+}
+.user-manual .manual-sub-conten li b {
+  font-weight: 500;
+  color: #3c5269;
 }/*# sourceMappingURL=pages.css.map */

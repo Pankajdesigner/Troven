@@ -15,8 +15,49 @@
   .Home-plan .col-md-3 {
     width: 33.33333333%;
   }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 15px 25px;
+  }
+  .troven-nav .right-btn .btn {
+    padding: 10px 15px;
+  }
+  .scrolling .troven-nav .btn {
+    padding: 6px 15px;
+  }
 }
 @media (max-width: 1200px) {
+  .user-manual {
+    padding: 60px 0;
+  }
+  .user-manual .side-nav ul a {
+    padding-left: 0;
+    font-size: 14px;
+  }
+  .user-manual .manual-content {
+    padding: 30px;
+  }
+  .user-manual hr {
+    margin: 2rem 0;
+  }
+  .user-manual .manual-content h2, .user-manual .manual-content .h2 {
+    font-size: 28px;
+  }
+  .user-manual .manual-content h4, .user-manual .manual-content .h4 {
+    font-size: 17px;
+  }
+  .user-manual .manual-sub-conten p {
+    font-size: 17px;
+  }
+  .user-manual .manual-sub-conten li {
+    font-size: 15px;
+  }
+  .user-manual .manual-content .titile-manual {
+    padding: 20px 0;
+    padding-top: 30px;
+  }
+  .navbar-brand {
+    width: 100px;
+  }
   .demo .tablet-main {
     transform: translateX(-50%) scale(0.6);
   }
@@ -27,7 +68,10 @@
     width: 30%;
   }
   .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 15px 19px;
+    padding: 15px 15px;
+  }
+  .troven-nav .right-btn .btn {
+    padding: 6px 15px;
   }
   .navbar-expand-lg .navbar-nav .nav-link.active::after {
     left: 19px;
@@ -128,6 +172,9 @@
   }
 }
 @media (max-width: 991px) {
+  .user-manual .side-nav {
+    margin-bottom: 30px;
+  }
   .pricing-plan .plan-filter {
     display: block;
   }
@@ -542,6 +589,37 @@
     display: block;
     margin-bottom: 20px;
   }
+  .user-manual .manual-content {
+    padding: 15px;
+  }
+  .user-manual .manual-content h2, .user-manual .manual-content .h2 {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .user-manual .manual-sub-conten strong {
+    font-size: 16px;
+  }
+  .user-manual .manual-content h4, .user-manual .manual-content .h4 {
+    font-size: 16px;
+  }
+  .user-manual .manual-sub-conten p {
+    font-size: 16px;
+  }
+  .user-manual .manual-sub-conten li {
+    font-size: 13px;
+    padding-bottom: 10px;
+  }
+  .user-manual .manual-sub-conten .sub-tt-user-manual {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .user-manual .manual-sub-conten .sub-tt-user-manual b {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .user-manual {
+    padding: 40px 0;
+  }
   body {
     background: #F0F5FE;
   }
@@ -781,7 +859,10 @@
     margin-bottom: 10px;
   }
   .page-header-troven h1, .page-header-troven .h1 {
-    font-size: 31px;
+    font-size: 24px;
+  }
+  .page-header-troven p {
+    font-size: 16px;
   }
   .assess-feature-icon {
     padding: 50px 0;
