@@ -334,7 +334,7 @@ footer{
             background: linear-gradient(108deg, #EEE 1.07%, #C7C8CA 100%);
             box-shadow: 43px 43px 100px 0px rgba(0, 0, 0, 0.38);
             width: 1500px;
-            height: 1000px; 
+            height: 1016px; 
             position: relative; 
             transform: translateX(-50%) scale(0.7); 
             left: 50%; 
@@ -353,6 +353,9 @@ footer{
             border: 4px solid #d0d5de;
             padding: 40px;
             overflow: hidden;
+        }
+        .img-fluid{
+            border-radius: 15px;
         }
         iframe{
             border-radius: 20px;
@@ -419,6 +422,9 @@ footer{
             h3{  
                 font-size: 26px; 
                 font-weight: 500; 
+            }
+            .btn{
+                display: none;
             }
             p{ 
                 font-size: 17px; 
@@ -1263,6 +1269,10 @@ footer{
         border-bottom: 1px solid #dfe7f8;
         outline-color:#dfe7f8;
     }
+}
+
+.faqs.feature-faq{
+    padding-top: 0;
 }
 
 
